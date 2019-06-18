@@ -1,5 +1,12 @@
 <template>
   <v-layout align-center justify-center column fill-height>
+    <v-flex class="text-md-center">
+      <h1>Welcome</h1>
+      <p>
+        You can find an overview of Little mousey's personal projects and
+        travels on this website
+      </p>
+    </v-flex>
     <v-flex>
       <img src="/img/haveamiceday.png" alt="Have a mice day" />
     </v-flex>

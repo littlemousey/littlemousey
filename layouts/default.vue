@@ -53,7 +53,7 @@
 export default {
   data() {
     return {
-      drawer: false,
+      drawer: true,
       items: [
         {
           icon: 'public',
