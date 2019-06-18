@@ -10,9 +10,9 @@
       </v-flex>
       <v-flex>
         <p class="text-md-center">
-          Little mousey 🐭 is a small enthousiastic front-end developer. She
-          lives in the Netherlands. Little mousey's other hobbies are
-          travelling, drawing, video games, photography and music.
+          Little mousey 🐭 is a small enthousiastic front-end developer. <br />
+          She lives in the Netherlands 🇳🇱 <br />Little mousey's other hobbies
+          are travelling, drawing, video games, photography and music.
         </p>
       </v-flex>
     </v-layout>

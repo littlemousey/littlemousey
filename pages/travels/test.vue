@@ -6,7 +6,8 @@
         alt="little mousey wave"
         class="mb-5"
       />
-      <h1>test</h1>
+      <h1>Oops</h1>
+      <p>This page is under construction 🔨</p>
     </v-flex>
   </v-layout>
 </template>
