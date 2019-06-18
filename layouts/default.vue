@@ -42,9 +42,9 @@
         <nuxt />
       </v-container>
     </v-content>
-    <v-footer color="amber" class="pa-3" app dark>
+    <v-footer color="amber darken-3" class="pa-3" app dark>
       <v-spacer></v-spacer>
-      <span>&copy; Little Mousey</span>
+      <span>&copy; Little Mousey 🐭</span>
     </v-footer>
   </v-app>
 </template>

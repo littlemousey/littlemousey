@@ -11,6 +11,7 @@
         You can find some of my travels here. I will add more posts of my
         travels later
       </p>
+      <v-spacer></v-spacer>
       <v-card>
         <v-img
           src="https://cdn.vuetifyjs.com/images/cards/desert.jpg"

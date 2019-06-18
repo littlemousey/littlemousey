@@ -1,15 +1,18 @@
 <template>
-  <v-layout column justify-center align-center>
+  <v-layout align-center justify-center column fill-height>
+    <v-flex>
+      <img src="/img/haveamiceday.png" alt="Have a mice day" />
+    </v-flex>
     <v-flex>
       <img src="/img/littlemousey_greeting.png" alt="welcome little mousey" />
-      <v-carousel>
+    </v-flex>
+    <!-- <v-carousel>
         <v-carousel-item
           v-for="(item, i) in items"
           :key="i"
           :src="item.src"
         ></v-carousel-item>
-      </v-carousel>
-    </v-flex>
+      </v-carousel> -->
   </v-layout>
 </template>
 
@@ -19,16 +22,13 @@ export default {
     return {
       items: [
         {
-          src: 'https://cdn.vuetifyjs.com/images/carousel/squirrel.jpg'
+          src: '/img/haveamiceday.png'
         },
         {
-          src: 'https://randomfox.ca/images/69.jpg'
+          src: '/img/hello_littlemousey.png'
         },
         {
-          src: 'https://randomfox.ca/images/90.jpg'
-        },
-        {
-          src: 'https://cdn.vuetifyjs.com/images/carousel/planet.jpg'
+          src: '/img/javascript_for_mice.png'
         }
       ]
     }
