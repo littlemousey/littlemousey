@@ -23,7 +23,7 @@
             <div>
               <h3 class="headline mb-0">Schiermonnikoog</h3>
               <div>
-                A Frisian island in The Netherlands. It is one of the 5 Dutch
+                A Frisian island in the Netherlands. It is one of the 5 Dutch
                 Wadden Sea Islands.
               </div>
             </div>
@@ -76,7 +76,7 @@
             <div>
               <h3 class="headline mb-0">Leeuwarden</h3>
               <div>
-                Capital city of the Friesland province in The Netherlands
+                Capital city of the Friesland province in the Netherlands
               </div>
             </div>
           </v-card-title>
