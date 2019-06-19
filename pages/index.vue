@@ -11,9 +11,6 @@
     <v-flex>
       <img src="/img/haveamiceday.png" alt="Have a mice day" />
     </v-flex>
-    <v-flex>
-      <img src="/img/littlemousey_greeting.png" alt="welcome little mousey" />
-    </v-flex>
     <!-- <v-carousel>
         <v-carousel-item
           v-for="(item, i) in items"

@@ -24,8 +24,8 @@
           color="blue lighten-5"
         >
           <v-card-text>
-            This website is built with Vue.js and Nuxt. You can find more
-            projects of Little mousey on
+            This website is built with Vue.js, Nuxt, and Vuetify. You can find
+            more projects of Little mousey on
             <font-awesome-icon :icon="['fab', 'github']"
           /></v-card-text>
         </v-card>

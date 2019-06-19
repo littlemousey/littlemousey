@@ -9,25 +9,28 @@
         />
         <h1>This mouse loves traveling and exploring the world</h1>
         <p>
-          You can find some of my travels here. I will add more posts of my
-          travels later
+          You can find some journals of my travels here. I will add more travel
+          posts later
         </p>
       </v-flex>
     </v-layout>
     <v-layout row wrap>
       <v-flex xs3 mx-1 mt-2>
         <v-card hover>
-          <v-img src="https://i.postimg.cc/wjX6XRhs/DSC05134.jpg"></v-img>
+          <v-img src="https://i.postimg.cc/wjHSFSjw/DSC05134.jpg"></v-img>
 
           <v-card-title primary-title>
             <div>
               <h3 class="headline mb-0">Schiermonnikoog</h3>
-              <div>A Frisian island in The Netherlands</div>
+              <div>
+                A Frisian island in The Netherlands. It is one of the 5 Dutch
+                Wadden Sea Islands.
+              </div>
             </div>
           </v-card-title>
 
           <v-card-actions>
-            <v-btn flat color="orange" small nuxt to="/travels/test"
+            <v-btn flat color="orange" small nuxt to="/travels/schiermonnikoog"
               >Explore</v-btn
             >
           </v-card-actions>
@@ -45,9 +48,7 @@
           </v-card-title>
 
           <v-card-actions>
-            <v-btn flat color="orange" small nuxt to="/travels/test"
-              >Explore</v-btn
-            >
+            <v-btn flat color="orange">Will come soon</v-btn>
           </v-card-actions>
         </v-card>
       </v-flex>
@@ -63,9 +64,7 @@
           </v-card-title>
 
           <v-card-actions>
-            <v-btn flat color="orange" small nuxt to="/travels/test"
-              >Explore</v-btn
-            >
+            <v-btn flat color="orange" small>Will come soon</v-btn>
           </v-card-actions>
         </v-card>
       </v-flex>
@@ -83,9 +82,7 @@
           </v-card-title>
 
           <v-card-actions>
-            <v-btn flat color="orange" small nuxt to="/travels/test"
-              >Explore</v-btn
-            >
+            <v-btn flat color="orange" small>Will come soon</v-btn>
           </v-card-actions>
         </v-card>
       </v-flex>
