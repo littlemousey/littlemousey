@@ -15,6 +15,15 @@ export default {
         hid: 'description',
         name: 'description',
         content: process.env.npm_package_description || ''
+      },
+      /* Twitter card meta tags */
+      { name: 'twitter:card', content: 'summary_large_image' },
+      { name: 'twitter:site', content: 'http://littlemousey.com/' },
+      { name: 'twitter:title', content: 'Little mousey' },
+      { name: 'twitter:description', content: 'Where little mousey lives' },
+      {
+        name: 'twitter:image',
+        content: 'https://i.postimg.cc/LXS82y95/littlemousey-avatar.png'
       }
     ],
     link: [
@@ -87,9 +96,7 @@ export default {
    ** Build configuration
    */
   build: {
-    /*
-     ** You can extend webpack config here
-     */
+    analyze: true,
     extend(config, ctx) {}
   }
 }
