@@ -16,6 +16,19 @@ export default {
         name: 'description',
         content: process.env.npm_package_description || ''
       },
+      /* Facebook Open Graph */
+      {
+        property: 'og:title',
+        content: 'Little mousey'
+      },
+      {
+        property: 'og:description',
+        content: 'Where little mousey lives'
+      },
+      {
+        property: 'og:image',
+        content: 'https://i.postimg.cc/LXS82y95/littlemousey-avatar.png'
+      },
       /* Twitter card meta tags */
       { name: 'twitter:card', content: 'summary_large_image' },
       { name: 'twitter:site', content: 'http://littlemousey.com/' },
