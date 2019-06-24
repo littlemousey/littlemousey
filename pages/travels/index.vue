@@ -16,7 +16,7 @@
     </v-layout>
     <v-layout row wrap>
       <v-flex xs3 mx-1 mt-2>
-        <v-card hover>
+        <v-card hover nuxt to="/travels/schiermonnikoog">
           <v-img src="https://i.postimg.cc/wjHSFSjw/DSC05134.jpg"></v-img>
 
           <v-card-title primary-title>
