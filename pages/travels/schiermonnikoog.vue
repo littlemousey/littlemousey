@@ -148,7 +148,7 @@
       </v-flex>
     </v-layout>
     <v-layout row wrap align-start justify-center>
-      <v-flex xs6 my-5>
+      <v-flex xs12 sm10 md4 my-5>
         <v-card>
           <v-toolbar color="amber darken-3" dark>
             <v-toolbar-title>Achievements 🐭</v-toolbar-title>
@@ -204,4 +204,8 @@ export default {
 }
 </script>
 
-<style lang="scss" scoped></style>
+<style lang="scss" scoped>
+.v-list__tile__title {
+  font-size: 12px;
+}
+</style>
