@@ -53,7 +53,7 @@
 export default {
   data() {
     return {
-      drawer: true,
+      drawer: this.checkOnSmallDevice(),
       items: [
         {
           icon: 'public',
@@ -78,6 +78,18 @@ export default {
       ],
       title: 'Little mousey'
     }
+  },
+  methods: {
+    checkOnSmallDevice: function() {
+      if (
+        this.$vuetify.breakpoint.name === 'sm' ||
+        this.$vuetify.breakpoint.name === 'xs'
+      ) {
+        this.drawer = false
+      } else {
+        this.drawer = true
+      }
+    }
   }
 }
 </script>
@@ -93,6 +105,11 @@ export default {
 
 .v-toolbar--fixed {
   /* Toolbar z-index has to be higher than Leaflet map */
+  z-index: 1100;
+}
+
+.v-navigation-drawer--is-mobile {
+  /* Navigation drawer z-index has to be higher than Leaflet map */
   z-index: 1100;
 }
 </style>
