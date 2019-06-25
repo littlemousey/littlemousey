@@ -1,6 +1,6 @@
 <template>
   <v-app class="app">
-    <v-navigation-drawer v-model="drawer" fixed app>
+    <v-navigation-drawer v-model="drawer" fixed app clipped>
       <v-toolbar flat class="transparent">
         <v-list class="pa-0">
           <v-list-tile avatar>
@@ -9,7 +9,7 @@
             </v-list-tile-avatar>
 
             <v-list-tile-content>
-              <v-list-tile-title>Welcome!</v-list-tile-title>
+              <v-list-tile-title>Navigation</v-list-tile-title>
             </v-list-tile-content>
           </v-list-tile>
         </v-list>
@@ -89,5 +89,10 @@ export default {
 
 .app {
   font-family: 'Lora', serif;
+}
+
+.v-toolbar--fixed {
+  /* Toolbar z-index has to be higher than Leaflet map */
+  z-index: 1100;
 }
 </style>

@@ -79,7 +79,8 @@ export default {
           }
         ]
       }
-    ]
+    ],
+    ['nuxt-leaflet']
   ],
   /*
    ** Axios module configuration

@@ -1,12 +1,29 @@
 <template>
   <section class="travel">
+    <v-layout mb-5>
+      <v-flex xs6 mx-auto mt-2>
+        <div>
+          <l-map
+            style="height: 300px; width: 800px"
+            :zoom="zoom"
+            :center="center"
+            :world-copy-jump="true"
+            @update:zoom="zoomUpdated"
+            @update:center="centerUpdated"
+          >
+            <l-tile-layer :url="url"></l-tile-layer>
+            <l-marker
+              v-for="marker in markers"
+              :key="marker.city"
+              :lat-lng="marker.coordinates"
+              ><l-popup>{{ marker.city }}</l-popup></l-marker
+            >
+          </l-map>
+        </div>
+      </v-flex>
+    </v-layout>
     <v-layout>
       <v-flex text-xs-center>
-        <img
-          src="/img/littlemousey_wave.png"
-          alt="little mousey wave"
-          class="mb-5"
-        />
         <h1>This mouse loves traveling and exploring the world</h1>
         <p>
           You can find some journals of my travels here. I will add more travel
@@ -14,7 +31,7 @@
         </p>
       </v-flex>
     </v-layout>
-    <v-layout row wrap>
+    <v-layout row wrap align-content-center>
       <v-flex xs3 mx-1 mt-2>
         <v-card hover nuxt to="/travels/schiermonnikoog">
           <v-img src="https://i.postimg.cc/wjHSFSjw/DSC05134.jpg"></v-img>
@@ -91,11 +108,22 @@
 </template>
 
 <script>
+import locations from '~/data/locations'
 export default {
   data() {
     return {
-      maxHeight: '400px',
-      maxWeight: '400px'
+      url: 'http://{s}.tile.osm.org/{z}/{x}/{y}.png',
+      zoom: 1,
+      center: [50, 20],
+      markers: locations
+    }
+  },
+  methods: {
+    zoomUpdated(zoom) {
+      this.zoom = zoom
+    },
+    centerUpdated(center) {
+      this.center = center
     }
   }
 }
