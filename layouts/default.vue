@@ -31,11 +31,13 @@
         </v-list-tile>
       </v-list>
     </v-navigation-drawer>
-    <v-toolbar color="blue darken-4" dark fixed app @click="drawer = !drawer">
-      <v-toolbar-side-icon />
+    <v-toolbar color="blue darken-4" dark fixed app>
+      <v-toolbar-side-icon @click="drawer = !drawer" />
       <v-toolbar-title class="title" v-text="title" />
-
       <v-spacer />
+      <v-toolbar-items class="hidden-sm-and-down">
+        <weather-button></weather-button>
+      </v-toolbar-items>
     </v-toolbar>
     <v-content>
       <v-container>
@@ -50,7 +52,9 @@
 </template>
 
 <script>
+import weatherButton from '~/components/weatherButton'
 export default {
+  components: { weatherButton },
   data() {
     return {
       drawer: this.checkOnSmallDevice(),
@@ -80,7 +84,7 @@ export default {
     }
   },
   methods: {
-    checkOnSmallDevice: function() {
+    checkOnSmallDevice() {
       if (
         this.$vuetify.breakpoint.name === 'sm' ||
         this.$vuetify.breakpoint.name === 'xs'

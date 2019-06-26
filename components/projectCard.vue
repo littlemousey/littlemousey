@@ -1,6 +1,6 @@
 <template>
   <v-flex xs12 sm6 md4>
-    <v-card hover :href="demoLink">
+    <v-card hover :href="demoLink" class="mx-2 my-2">
       <v-img :src="image"> </v-img>
       <v-card-title class="justify-center">
         <div>{{ text }}</div>

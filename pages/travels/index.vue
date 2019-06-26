@@ -75,6 +75,7 @@ import locations from '~/data/locations'
 import destinationCard from '~/components/destinationCard'
 
 export default {
+  name: 'Travels',
   components: { destinationCard },
   data() {
     return {

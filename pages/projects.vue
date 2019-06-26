@@ -57,6 +57,7 @@
 import projectCard from '~/components/projectCard'
 
 export default {
+  name: 'Projects',
   components: {
     projectCard
   }
