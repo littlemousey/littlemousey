@@ -1,12 +1,14 @@
 <template>
   <v-btn v-if="weatherData" flat class="font-weight-bold" nuxt to="weather"
     ><span class="weather-icon">{{ weatherIcon }}</span
-    >{{ weatherData.temperature }}°C
+    >{{ weatherData.temperature }}°C<span class="weather-icon">{{
+      dayNightIndicator
+    }}</span>
   </v-btn>
 </template>
 
 <script>
-import { mapActions } from 'vuex'
+import { mapActions, mapState } from 'vuex'
 export default {
   name: 'WeatherButton',
   data() {
@@ -26,6 +28,16 @@ export default {
         return '🌧️'
       }
       return '🌤️'
+    },
+    ...mapState('weather', ['sunrise', 'sunset']),
+    dayNightIndicator() {
+      const dutchTime = parseInt(this.weatherData.timestamp.substring(11, 13))
+      const sunrise = parseInt(this.sunrise.substring(11, 13))
+      const sunset = parseInt(this.sunset.substring(11, 13))
+      if (dutchTime < sunrise || dutchTime > sunset) {
+        return '🌙'
+      }
+      return '☀️'
     }
   },
   mounted() {
@@ -61,6 +73,6 @@ export default {
 <style lang="scss" scoped>
 .weather-icon {
   font-size: 25px;
-  margin-right: 5px;
+  margin: 0 5px;
 }
 </style>

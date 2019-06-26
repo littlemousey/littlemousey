@@ -27,6 +27,7 @@
         </div>
       </v-flex>
     </v-layout>
+    <trip-header></trip-header>
     <v-layout row wrap my-5>
       <v-flex xs5 mx-2>
         <v-card>
@@ -178,8 +179,10 @@
 </template>
 
 <script>
+import TripHeader from '@/components/travelJournal/TripHeader'
 export default {
   name: 'Schiermonnikoog',
+  components: { TripHeader },
   data() {
     return {
       items: [

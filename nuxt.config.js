@@ -55,11 +55,15 @@ export default {
   /*
    ** Global CSS
    */
-  css: ['@/assets/scss/main.scss'],
+  css: [
+    '@/assets/scss/main.scss',
+    '@/node_modules/leaflet.markercluster/dist/MarkerCluster.css',
+    '@/node_modules/leaflet.markercluster/dist/MarkerCluster.Default.css'
+  ],
   /*
    ** Plugins to load before mounting the App
    */
-  plugins: [],
+  plugins: [{ src: '~/plugins/leaflet-plugin', ssr: false }],
   /*
    ** Nuxt.js modules
    */

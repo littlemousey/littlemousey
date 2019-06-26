@@ -17,6 +17,14 @@
             :lat-lng="marker.coordinates"
             ><l-popup>{{ marker.city }}</l-popup></l-marker
           >
+          <v-marker-cluster>
+            <l-marker
+              v-for="marker in markers2"
+              :key="marker.city"
+              :lat-lng="marker.coordinates"
+              ><l-popup>{{ marker.city }}</l-popup></l-marker
+            ></v-marker-cluster
+          >
         </l-map>
       </v-flex>
     </v-layout>
@@ -72,6 +80,7 @@
 
 <script>
 import locations from '~/data/locations'
+import locationsNL from '~/data/locations-nl'
 import destinationCard from '~/components/destinationCard'
 
 export default {
@@ -82,7 +91,8 @@ export default {
       url: 'http://{s}.tile.osm.org/{z}/{x}/{y}.png',
       zoom: 1,
       center: [50, 20],
-      markers: locations
+      markers: locations,
+      markers2: locationsNL
     }
   },
   computed: {

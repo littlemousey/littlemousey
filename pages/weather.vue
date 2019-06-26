@@ -26,10 +26,10 @@
           <v-card-title primary-title>
             <div>
               <div class="mt-2">
-                <div class="display-3">
+                <div class="display-2">
                   🌅 Sunrise: {{ sunrise | dateToTime }}
                 </div>
-                <div class="display-3">
+                <div class="display-2">
                   🌇 Sunset: {{ sunset | dateToTime }}
                 </div>
               </div>
@@ -65,5 +65,3 @@ export default {
   }
 }
 </script>
-
-<style lang="scss" scoped></style>
