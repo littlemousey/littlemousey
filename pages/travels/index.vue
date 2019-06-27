@@ -11,15 +11,21 @@
           @update:center="centerUpdated"
         >
           <l-tile-layer :url="url"></l-tile-layer>
-          <l-marker
-            v-for="marker in markers"
-            :key="marker.city"
-            :lat-lng="marker.coordinates"
-            ><l-popup>{{ marker.city }}</l-popup></l-marker
-          >
           <v-marker-cluster>
             <l-marker
-              v-for="marker in markers2"
+              v-for="marker in markers"
+              :key="marker.city"
+              :lat-lng="marker.coordinates"
+              ><l-popup>{{ marker.city }}</l-popup></l-marker
+            >
+            <l-marker
+              v-for="marker in markersNL"
+              :key="marker.city"
+              :lat-lng="marker.coordinates"
+              ><l-popup>{{ marker.city }}</l-popup></l-marker
+            >
+            <l-marker
+              v-for="marker in markersAsia"
               :key="marker.city"
               :lat-lng="marker.coordinates"
               ><l-popup>{{ marker.city }}</l-popup></l-marker
@@ -75,12 +81,24 @@
         button-text="Will come soon"
       ></destination-card>
     </v-layout>
+    <v-layout row justify-center>
+      <v-flex sx12 md6 my-5>
+        <span
+          >If you are interested in old journals of mine (in Dutch) about my
+          travels in 🇯🇵Japan, 🇷🇺Russia and 🇨🇳China: go to
+        </span>
+        <span
+          ><a href="https://ansdenijs.waarbenjij.nu/">waarbenjij.nu</a>🧭</span
+        >
+      </v-flex>
+    </v-layout>
   </section>
 </template>
 
 <script>
 import locations from '~/data/locations'
 import locationsNL from '~/data/locations-nl'
+import locationsAsia from '~/data/locations-asia'
 import destinationCard from '~/components/destinationCard'
 
 export default {
@@ -92,7 +110,8 @@ export default {
       zoom: 1,
       center: [50, 20],
       markers: locations,
-      markers2: locationsNL
+      markersNL: locationsNL,
+      markersAsia: locationsAsia
     }
   },
   computed: {
