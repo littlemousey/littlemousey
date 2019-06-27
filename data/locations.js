@@ -27,6 +27,7 @@ const locations = [
   { city: 'Aachen', coordinates: [50.775429, 6.08149] },
   { city: 'Antwerp', coordinates: [51.219448, 4.402464] },
   { city: 'Paris', coordinates: [48.856613, 2.352222] },
+  { city: 'Nice', coordinates: [43.7009358, 7.2683912] },
   { city: 'Rome', coordinates: [41.902782, 12.496365] },
   { city: 'Valencia', coordinates: [39.470242, -0.3768] },
   { city: 'Faro', coordinates: [37.019356, -7.93044] },

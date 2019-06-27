@@ -1,7 +1,7 @@
 <template>
   <section class="travel">
-    <v-layout mb-5>
-      <v-flex xs6 mx-auto mt-2>
+    <v-layout mb-5 justify-center>
+      <v-flex xs6 mt-2>
         <l-map
           :style="resizeMap"
           :zoom="zoom"
@@ -107,7 +107,7 @@ export default {
   data() {
     return {
       url: 'http://{s}.tile.osm.org/{z}/{x}/{y}.png',
-      zoom: 1,
+      zoom: 2,
       center: [50, 20],
       markers: locations,
       markersNL: locationsNL,
@@ -122,7 +122,7 @@ export default {
       ) {
         return 'height: 300px; width: 200px'
       } else {
-        return 'height: 300px; width: 800px'
+        return 'height: 300px; width: 900px'
       }
     }
   },
