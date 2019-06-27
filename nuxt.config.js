@@ -84,8 +84,13 @@ export default {
         ]
       }
     ],
-    ['nuxt-leaflet']
+    'nuxt-leaflet',
+    '@nuxtjs/sitemap'
   ],
+  sitemap: {
+    hostname: 'http://littlemousey.com',
+    routes: []
+  },
   /*
    ** Axios module configuration
    ** See https://axios.nuxtjs.org/options
@@ -112,5 +117,8 @@ export default {
   build: {
     analyze: true,
     extend(config, ctx) {}
+  },
+  generate: {
+    devtools: true
   }
 }
