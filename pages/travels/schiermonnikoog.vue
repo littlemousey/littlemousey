@@ -156,9 +156,3 @@ export default {
   }
 }
 </script>
-
-<style lang="scss" scoped>
-.v-list__tile__title {
-  font-size: 12px;
-}
-</style>
