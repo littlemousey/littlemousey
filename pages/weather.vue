@@ -26,10 +26,10 @@
           <v-card-title primary-title>
             <div>
               <div class="mt-2">
-                <div class="display-2">
+                <div class="display-1">
                   🌅 Sunrise: {{ sunrise | dateToTime }}
                 </div>
-                <div class="display-2">
+                <div class="display-1">
                   🌇 Sunset: {{ sunset | dateToTime }}
                 </div>
               </div>
@@ -39,7 +39,7 @@
       </v-flex>
     </v-layout>
     <v-layout>
-      <v-flex xs12 sm6 md4>
+      <v-flex xs12 sm8 md8>
         <div class="text-xs-right mt-3">
           Weather data is provided by
           <a href="https://www.buienradar.nl">buienradar.nl</a> Images are from

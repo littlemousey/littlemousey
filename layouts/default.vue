@@ -33,7 +33,11 @@
     </v-navigation-drawer>
     <v-toolbar color="blue darken-4" dark fixed app>
       <v-toolbar-side-icon @click="drawer = !drawer" />
-      <v-toolbar-title class="title" v-text="title" />
+      <v-toolbar-title
+        class="title home-link"
+        @click="goToHome()"
+        v-text="title"
+      />
       <v-spacer />
       <v-toolbar-items class="hidden-sm-and-down">
         <weather-button></weather-button>
@@ -93,6 +97,11 @@ export default {
       } else {
         this.drawer = true
       }
+    },
+    goToHome() {
+      this.$router.push({
+        path: '/'
+      })
     }
   }
 }
@@ -101,6 +110,10 @@ export default {
 <style lang="scss" scoped>
 .title {
   user-select: none;
+}
+
+.home-link {
+  cursor: pointer;
 }
 
 .app {
