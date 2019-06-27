@@ -1,47 +1,19 @@
 <template>
   <div class="schiermonnikoog-page">
-    <v-layout row wrap align-start justify-center>
-      <v-flex xs12>
-        <v-card class="my-2">
-          <v-img
-            class="white--text"
-            src="https://i.postimg.cc/13JBXgwP/DSC05152.jpg"
-            height="300"
-          >
-            <v-container fill-height fluid>
-              <v-layout fill-height>
-                <v-flex xs12 align-end flexbox>
-                  <span class="headline">Schiermonnikoog</span>
-                </v-flex>
-              </v-layout>
-            </v-container>
-          </v-img>
-        </v-card>
-      </v-flex>
-      <v-flex xs6 my-5>
-        <div>
-          This island is a paradise for hikers and bikers to enjoy nature. It
+    <trip-header
+      img-url="https://i.postimg.cc/13JBXgwP/DSC05152.jpg"
+      title="Schiermonnikoog"
+      text="This island is a paradise for hikers and bikers to enjoy nature. It
           has long stretching beaches (18 kilometers long) but also offers small
           lakes and woods. There are no cars allowed on the island. You can take
-          a ferry to Schiermonnikoog from Lauwersoog in the Friesland province.
-        </div>
-      </v-flex>
-    </v-layout>
-    <trip-header></trip-header>
-    <v-layout row wrap my-5>
-      <v-flex xs5 mx-2>
-        <v-card>
-          <v-img src="https://i.postimg.cc/D0L5wBdY/DSC05097.jpg"></v-img>
-        </v-card>
-      </v-flex>
-      <v-flex xs5 mx-2 align-self-center>
-        <div>
-          The ferry to the island. It takes about 45 minutes. You can buy
+          a ferry to Schiermonnikoog from Lauwersoog in the Friesland province."
+    ></trip-header>
+    <trip-highlight
+      image-url="https://i.postimg.cc/D0L5wBdY/DSC05097.jpg"
+      text="The ferry to the island. It takes about 45 minutes. You can buy
           tickets online. It would be wise to check the timetable departure
-          times.
-        </div>
-      </v-flex>
-    </v-layout>
+          times."
+    ></trip-highlight>
     <v-layout row wrap my-5>
       <v-flex xs5 mx-2 align-self-center>
         <div>
@@ -180,9 +152,10 @@
 
 <script>
 import TripHeader from '@/components/travelJournal/TripHeader'
+import TripHighlight from '@/components/travelJournal/TripHighlight'
 export default {
   name: 'Schiermonnikoog',
-  components: { TripHeader },
+  components: { TripHeader, TripHighlight },
   data() {
     return {
       items: [
