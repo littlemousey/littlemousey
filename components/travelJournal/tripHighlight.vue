@@ -3,7 +3,11 @@
     <v-layout v-if="imageLeft" row wrap my-5>
       <v-flex xs5 mx-2>
         <v-card v-if="imageUrl">
-          <v-img :src="imageUrl" max-height="400px"></v-img>
+          <v-img
+            :src="imageUrl"
+            max-height="450px"
+            :alt="imageDescription"
+          ></v-img>
         </v-card>
       </v-flex>
       <v-flex xs5 mx-2 align-self-center>
@@ -20,7 +24,7 @@
       </v-flex>
       <v-flex xs5 mx-2>
         <v-card v-if="imageUrl">
-          <v-img :src="imageUrl" max-height="400px"></v-img>
+          <v-img :src="imageUrl" max-height="450px"></v-img>
         </v-card>
       </v-flex>
     </v-layout>
@@ -42,6 +46,10 @@ export default {
     imageLeft: {
       type: Boolean,
       default: true
+    },
+    imageDescription: {
+      type: String,
+      default: ''
     }
   }
 }

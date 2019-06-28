@@ -96,9 +96,9 @@
 </template>
 
 <script>
-import locations from '~/data/locations'
-import locationsNL from '~/data/locations-nl'
-import locationsAsia from '~/data/locations-asia'
+import locations from '~/data/locations/locations-eu'
+import locationsNL from '~/data/locations/locations-nl'
+import locationsAsia from '~/data/locations/locations-asia'
 import destinationCard from '~/components/destinationCard'
 
 export default {

@@ -58,6 +58,8 @@ const locations = [
   { city: 'Bagnoregio', coordinates: [42.62698, 12.090872] },
   { city: 'Catania', coordinates: [37.507877, 15.08303] },
   { city: 'Agios Nikolaos', coordinates: [35.189018, 25.71707] },
+  { city: 'Piskopiano', coordinates: [35.30849, 25.38433] },
+  { city: 'Impros', coordinates: [35.25468, 24.17193] },
   { city: 'Helsinki', coordinates: [60.169857, 24.938379] },
   { city: 'Rovaniemi', coordinates: [66.503944, 25.729391] },
   { city: 'Oulu', coordinates: [65.012093, 25.465076] },

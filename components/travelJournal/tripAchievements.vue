@@ -30,7 +30,7 @@ export default {
   name: 'TripAchievements',
   props: {
     achievements: {
-      type: Object,
+      type: Array,
       required: true
     }
   }
