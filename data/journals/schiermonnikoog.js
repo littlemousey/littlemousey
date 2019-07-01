@@ -145,11 +145,6 @@ const highlights = [
     image: 'https://i.postimg.cc/tRzrZrDV/IMAG3595.jpg',
     imageDescription: 'Berken lake',
     imageLeft: true
-  },
-  {
-    image: 'https://i.postimg.cc/qMM188ZD/IMAG3599.jpg',
-    imageDescription: 'Forest',
-    imageLeft: false
   }
 ]
 
