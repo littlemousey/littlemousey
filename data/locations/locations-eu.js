@@ -4,6 +4,7 @@ const locations = [
   { city: 'Orlando', coordinates: [28.538336, -81.379234] },
   { city: 'Miami', coordinates: [25.761681, -80.191788] },
   { city: 'Everglades', coordinates: [25.18045, -80.791908] },
+  { city: 'Cancún', coordinates: [21.1734, -86.8281] },
 
   // Hawaii
   { city: 'Big Island', coordinates: [19.542915, -155.665863] },

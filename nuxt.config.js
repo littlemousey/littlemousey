@@ -63,7 +63,7 @@ export default {
   /*
    ** Plugins to load before mounting the App
    */
-  plugins: [{ src: '~/plugins/leaflet-plugin', ssr: false }],
+  plugins: [{ src: '~/plugins/leaflet.js', ssr: false }],
   /*
    ** Nuxt.js modules
    */
@@ -84,7 +84,6 @@ export default {
         ]
       }
     ],
-    'nuxt-leaflet',
     '@nuxtjs/sitemap'
   ],
   sitemap: {
