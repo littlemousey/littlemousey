@@ -47,40 +47,13 @@
     </v-layout>
     <v-layout row wrap align-content-center>
       <destination-card
-        title="Schiermonnikoog"
-        text="A Frisian island in the Netherlands. It is one of the 5 Dutch
-                Wadden Sea Islands"
-        image-url="https://i.postimg.cc/wjHSFSjw/DSC05134.jpg"
-        link="/travels/schiermonnikoog"
-        button-text="Explore"
-      ></destination-card>
-      <destination-card
-        title="Paris"
-        text="The world famous capital of France"
-        image-url="https://i.postimg.cc/zBB8Yd4n/IMAG2956.jpg"
-        link="/travels/test"
-        button-text="Will come soon"
-      ></destination-card>
-      <destination-card
-        title="Kevelaer"
-        text="Pilgrimage town in Germany"
-        image-url="https://i.postimg.cc/6q1qyM7X/IMAG2182.jpg"
-        link="/travels/test"
-        button-text="Will come soon"
-      ></destination-card>
-      <destination-card
-        title="Leeuwarden"
-        text="Capital city of the Friesland province in the Netherlands"
-        image-url="https://i.postimg.cc/vmj0tspg/IMAG9350.jpg"
-        link="/travels/test"
-        button-text="Will come soon"
-      ></destination-card>
-      <destination-card
-        title="Groningen"
-        text="Lively student city in the northern part of the Netherlands"
-        image-url="https://i.postimg.cc/VsS0q688/IMAG9315.jpg"
-        link="/travels/test"
-        button-text="Will come soon"
+        v-for="destination in destinations"
+        :key="destination.title"
+        :title="destination.title"
+        :text="destination.text"
+        :image-url="destination.image"
+        :link="destination.link"
+        :button-text="destination.button"
       ></destination-card>
     </v-layout>
     <v-layout row justify-center>
@@ -104,6 +77,7 @@ import locationsAsia from '~/data/locations/locations-asia'
 import destinationCard from '~/components/destinationCard'
 import { LMap, LTileLayer, LMarker, LPopup } from 'vue2-leaflet'
 import Vue2LeafletMarkerCluster from 'vue2-leaflet-markercluster'
+import destinations from '~/data/destinations/destinations'
 
 export default {
   name: 'Travels',
@@ -122,7 +96,8 @@ export default {
       center: [50, 20],
       markers: locations,
       markersNL: locationsNL,
-      markersAsia: locationsAsia
+      markersAsia: locationsAsia,
+      destinations: destinations
     }
   },
   computed: {

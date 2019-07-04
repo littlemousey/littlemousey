@@ -14,40 +14,12 @@
     </v-layout>
     <v-layout align-center justify-center row wrap>
       <project-card
-        image="/img/projects/pokedex-vue.png"
-        text="Pokédex built with Vue CLI"
-        demo-link="https://stoic-kilby-75508b.netlify.com/"
-        repo-url="https://github.com/littlemousey/pokedex-vue"
-      ></project-card>
-      <project-card
-        image="/img/projects/jsonPrettyPrint.png"
-        text="Pretty print one-line JSON to readable JSON"
-        demo-link="https://littlemousey.github.io/jsonPrettyPrinter/"
-        repo-url="https://github.com/littlemousey/jsonPrettyPrinter"
-      ></project-card>
-      <project-card
-        image="/img/projects/pikachuGiphy.png"
-        text="Pikachu giphy generator"
-        demo-link="https://littlemousey.github.io/pikachuGiphy/"
-        repo-url="https://github.com/littlemousey/pikachuGiphy"
-      ></project-card>
-      <project-card
-        image="/img/projects/slidingpuzzle.png"
-        text="Sliding puzzle game built with Vue CLI"
-        demo-link="https://zen-tereshkova-f8ce4f.netlify.com/"
-        repo-url="https://github.com/littlemousey/sliding-puzzle-game"
-      ></project-card>
-      <project-card
-        image="/img/projects/pingu-app.png"
-        text="Pingu app built with cordova"
-        demo-link="https://github.com/littlemousey/pingu-app"
-        repo-url="https://github.com/littlemousey/pingu-app"
-      ></project-card>
-      <project-card
-        image="/img/projects/christmasVR.png"
-        text="Christmas VR meeting room built with A-FRAME"
-        demo-link="https://littlemousey.github.io/ChristmasVR/"
-        repo-url="https://github.com/littlemousey/ChristmasVR"
+        v-for="project in projects"
+        :key="project.name"
+        :image="project.image"
+        :text="project.text"
+        :demo-link="project.demo"
+        :repo-url="project.repo"
       ></project-card>
     </v-layout>
   </v-container>
@@ -55,11 +27,17 @@
 
 <script>
 import projectCard from '~/components/projectCard'
+import projects from '~/data/projects/projects'
 
 export default {
   name: 'Projects',
   components: {
     projectCard
+  },
+  data: function() {
+    return {
+      projects: projects
+    }
   }
 }
 </script>
