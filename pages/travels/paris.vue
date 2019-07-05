@@ -1,5 +1,5 @@
 <template>
-  <div class="schiermonnikoog-page">
+  <div class="paris-page">
     <trip-header
       :img-url="header.image"
       :title="header.title"
@@ -33,9 +33,9 @@ import {
   highlights,
   achievements,
   dateOfVisit
-} from '@/data/journals/schiermonnikoog'
+} from '@/data/journals/paris'
 export default {
-  name: 'Schiermonnikoog',
+  name: 'Paris',
   components: { TripHeader, TripHighlight, TripAchievements },
   data() {
     return {

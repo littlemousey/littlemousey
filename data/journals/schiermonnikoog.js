@@ -125,6 +125,12 @@ const highlights = [
     imageLeft: true
   },
   {
+    image: 'https://i.postimg.cc/TYdLxqNc/DSC05158.jpg',
+    imageDescription: 'Path',
+    text: 'Path to the bird spotting hut',
+    imageLeft: true
+  },
+  {
     image: 'https://i.postimg.cc/tJKB1VYr/IMG-20190609-143901.jpg',
     imageDescription: 'Wooden bridge',
     text:
@@ -144,6 +150,16 @@ const highlights = [
   {
     image: 'https://i.postimg.cc/tRzrZrDV/IMAG3595.jpg',
     imageDescription: 'Berken lake',
+    imageLeft: true
+  },
+  {
+    image: 'https://i.postimg.cc/xT6k1JWV/DSC05189.jpg',
+    imageDescription: 'Sheep landscape',
+    imageLeft: false
+  },
+  {
+    image: 'https://i.postimg.cc/W3czHMJg/IMAG3599.jpg',
+    imageDescription: 'Forest',
     imageLeft: true
   }
 ]
@@ -167,4 +183,6 @@ const achievements = [
   }
 ]
 
-export { header, highlights, achievements }
+const dateOfVisit = 'June 2019'
+
+export { header, highlights, achievements, dateOfVisit }

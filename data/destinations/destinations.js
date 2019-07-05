@@ -9,10 +9,11 @@ const destinations = [
   },
   {
     title: 'Paris',
-    text: 'The world famous capital of France',
-    image: 'https://i.postimg.cc/zBB8Yd4n/IMAG2956.jpg',
-    link: '/travels/test',
-    button: 'Will come soon'
+    text:
+      'The world famous capital of France. Lovely city to visit for a weekend trip',
+    image: 'https://i.postimg.cc/L5qKpWPW/IMAG2956.jpg',
+    link: '/travels/paris',
+    button: 'Explore'
   },
   {
     title: 'Kevelaer',
