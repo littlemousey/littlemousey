@@ -1,7 +1,7 @@
 <template>
   <div>
-    <v-layout v-if="imageLeft" row wrap my-5>
-      <v-flex xs5 mx-2>
+    <v-layout v-if="textHighlightShouldComeAfter" row wrap my-5>
+      <v-flex xs12 md5 mx-2>
         <v-card v-if="imageUrl">
           <v-img
             :src="imageUrl"
@@ -10,19 +10,19 @@
           ></v-img>
         </v-card>
       </v-flex>
-      <v-flex xs5 mx-2 align-self-center>
+      <v-flex xs12 md5 mx-2 align-self-center>
         <div>
           {{ text }}
         </div>
       </v-flex>
     </v-layout>
-    <v-layout v-if="!imageLeft" row wrap my-5>
-      <v-flex xs5 mx-2 align-self-center>
+    <v-layout v-if="!textHighlightShouldComeAfter" row wrap my-5>
+      <v-flex xs12 md5 mx-2 align-self-center>
         <div>
           {{ text }}
         </div>
       </v-flex>
-      <v-flex xs5 mx-2>
+      <v-flex xs12 md5 mx-2>
         <v-card v-if="imageUrl">
           <v-img :src="imageUrl" max-height="450px"></v-img>
         </v-card>
@@ -50,6 +50,11 @@ export default {
     imageDescription: {
       type: String,
       default: ''
+    }
+  },
+  computed: {
+    textHighlightShouldComeAfter() {
+      return this.imageLeft || this.$vuetify.breakpoint.name === 'xs'
     }
   }
 }

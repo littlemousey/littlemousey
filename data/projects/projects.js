@@ -31,7 +31,7 @@ const projects = [
     name: 'Pingu app',
     text: 'Pingu app built with cordova',
     image: '/img/projects/pingu-app.png',
-    demo: 'https://github.com/littlemousey/pingu-app',
+    demo: 'https://serene-hoover-83a0b2.netlify.com',
     repo: 'https://github.com/littlemousey/pingu-app'
   },
   {

@@ -30,7 +30,7 @@ const highlights = [
     imageDescription: "Gare de l'est",
     text:
       'This station is nearby Gare du Nord (10 minutes walk). It has quite a few (international) shops inside and is a subway station as well',
-    imageLeft: true
+    imageLeft: false
   },
   {
     image: 'https://i.postimg.cc/BZc7FpgF/DSC04896.jpg',
@@ -42,7 +42,7 @@ const highlights = [
     image: 'https://i.postimg.cc/yxXGYXfF/IMAG2932.jpg',
     imageDescription: 'Subway',
     text:
-      'The subway is very convenient for long distances, for example the Eiffel tower to the Sacré-Cœur could take an hour to walk. If you will make use of the subway very often during your trip, you could consider a metro pass instead of buying a new ticket each trip.',
+      'The subway is very convenient for long distances, for example the Eiffel tower to the Sacré-Cœur could take an hour to walk. If you are going to make use of the subway very often during your trip, you could consider a metro pass instead of buying a new ticket each trip.',
     imageLeft: true
   },
   {
