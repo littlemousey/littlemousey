@@ -2,38 +2,7 @@
   <section class="travel">
     <v-layout mb-5 justify-center>
       <v-flex xs8 md12 mt-2>
-        <no-ssr>
-          <l-map
-            :style="resizeMap"
-            :zoom="zoom"
-            :center="center"
-            :world-copy-jump="true"
-            @update:zoom="zoomUpdated"
-            @update:center="centerUpdated"
-          >
-            <l-tile-layer :url="url"></l-tile-layer>
-            <v-marker-cluster>
-              <l-marker
-                v-for="marker in markers"
-                :key="marker.city"
-                :lat-lng="marker.coordinates"
-                ><l-popup>{{ marker.city }}</l-popup></l-marker
-              >
-              <l-marker
-                v-for="marker in markersNL"
-                :key="marker.city"
-                :lat-lng="marker.coordinates"
-                ><l-popup>{{ marker.city }}</l-popup></l-marker
-              >
-              <l-marker
-                v-for="marker in markersAsia"
-                :key="marker.city"
-                :lat-lng="marker.coordinates"
-                ><l-popup>{{ marker.city }}</l-popup></l-marker
-              ></v-marker-cluster
-            >
-          </l-map>
-        </no-ssr>
+        <leafletmap :markers="allMarkersCombined"></leafletmap>
       </v-flex>
     </v-layout>
     <v-layout>
@@ -75,25 +44,17 @@ import locations from '~/data/locations/locations-eu'
 import locationsNL from '~/data/locations/locations-nl'
 import locationsAsia from '~/data/locations/locations-asia'
 import destinationCard from '~/components/destinationCard'
-import { LMap, LTileLayer, LMarker, LPopup } from 'vue2-leaflet'
-import Vue2LeafletMarkerCluster from 'vue2-leaflet-markercluster'
+import Leafletmap from '~/components/leafletmap'
 import destinations from '~/data/destinations/destinations'
 
 export default {
   name: 'Travels',
   components: {
     destinationCard,
-    LMap,
-    LTileLayer,
-    LMarker,
-    LPopup,
-    'v-marker-cluster': Vue2LeafletMarkerCluster
+    Leafletmap
   },
   data() {
     return {
-      url: 'http://{s}.tile.osm.org/{z}/{x}/{y}.png',
-      zoom: 2,
-      center: [50, 20],
       markers: locations,
       markersNL: locationsNL,
       markersAsia: locationsAsia,
@@ -101,23 +62,8 @@ export default {
     }
   },
   computed: {
-    resizeMap: function() {
-      if (
-        this.$vuetify.breakpoint.name === 'sm' ||
-        this.$vuetify.breakpoint.name === 'xs'
-      ) {
-        return 'height: 300px; width: 200px'
-      } else {
-        return 'height: 300px; width: 1000px'
-      }
-    }
-  },
-  methods: {
-    zoomUpdated(zoom) {
-      this.zoom = zoom
-    },
-    centerUpdated(center) {
-      this.center = center
+    allMarkersCombined() {
+      return this.markers.concat(this.markersNL).concat(this.markersAsia)
     }
   }
 }

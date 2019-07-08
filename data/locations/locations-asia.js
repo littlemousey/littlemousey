@@ -11,6 +11,10 @@ const locationsAsia = [
   { city: 'Jakarta', coordinates: [-6.17511, 106.865036] },
   { city: 'Yogyakarta', coordinates: [-7.79558, 110.369492] },
   { city: 'Muntok', coordinates: [-2.06191, 105.17906] },
+  { city: 'Pangkalpinang', coordinates: [-2.131627, 106.116928] },
+  { city: 'Sungailiat', coordinates: [-1.8758, 106.097] },
+  { city: 'Borobudur', coordinates: [-7.607874, 110.203751] },
+  { city: 'Prambanan', coordinates: [-7.75566, 110.489571] },
 
   // Japan
   { city: 'Kanazawa', coordinates: [36.560001, 136.640015] },
