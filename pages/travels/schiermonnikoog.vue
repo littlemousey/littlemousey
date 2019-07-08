@@ -17,7 +17,10 @@
     <v-layout row wrap align-start justify-center>
       <v-flex xs6 my-5>
         <div class="text-xs-center">
-          <span class="grey--text">Period of visit: {{ dateOfVisit }}</span>
+          <div>Period of visit: {{ dateOfVisit }}</div>
+          <div class="grey--text">
+            Images are copyrighted, please ask before using the images.
+          </div>
         </div>
       </v-flex>
     </v-layout>

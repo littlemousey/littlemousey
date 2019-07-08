@@ -27,6 +27,9 @@
             <div>
               <div class="mt-2">
                 <div class="display-1">
+                  🕰️ {{ weatherData.timestamp | dateToHour }}
+                </div>
+                <div class="display-1">
                   🌅 Sunrise: {{ sunrise | dateToTime }}
                 </div>
                 <div class="display-1">
@@ -57,6 +60,15 @@ export default {
   filters: {
     dateToTime(value) {
       return value.substring(11, 16)
+    },
+    dateToHour(value) {
+      const hour = value.substring(11, 13)
+      if (parseInt(hour) < 12) {
+        return hour + 'AM'
+      } else {
+        const hourInPM = parseInt(hour) - 12
+        return hourInPM + 'PM'
+      }
     }
   },
   computed: {
