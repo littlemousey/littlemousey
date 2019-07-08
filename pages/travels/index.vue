@@ -1,7 +1,7 @@
 <template>
   <section class="travel">
     <v-layout mb-5 justify-center>
-      <v-flex xs6 mt-2>
+      <v-flex xs8 md12 mt-2>
         <no-ssr>
           <l-map
             :style="resizeMap"
@@ -108,7 +108,7 @@ export default {
       ) {
         return 'height: 300px; width: 200px'
       } else {
-        return 'height: 300px; width: 900px'
+        return 'height: 300px; width: 1000px'
       }
     }
   },

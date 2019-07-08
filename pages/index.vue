@@ -37,7 +37,9 @@ export default {
         'pieni hiiri',
         'kleine Maus',
         '小さなネズミ',
-        '작은 마우스'
+        '작은 마우스',
+        'маленькая мышка',
+        'pequeño ratón'
       ],
       currentWord: ''
     }
