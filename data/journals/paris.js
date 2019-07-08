@@ -53,6 +53,11 @@ const highlights = [
     imageLeft: true
   },
   {
+    image: 'https://i.postimg.cc/L5qKpWPW/IMAG2956.jpg',
+    imageDescription: 'Eiffel tower',
+    imageLeft: true
+  },
+  {
     image: 'https://i.postimg.cc/QxhPYwtS/DSC04907.jpg',
     imageDescription: 'Seine river',
     text:
@@ -67,8 +72,18 @@ const highlights = [
     imageLeft: false
   },
   {
+    image: 'https://i.postimg.cc/fLY2BfQ6/DSC04915.jpg',
+    imageDescription: 'View from Arc de Triomphe',
+    imageLeft: false
+  },
+  {
     image: 'https://i.postimg.cc/nhwPzL1w/DSC04909.jpg',
     imageDescription: 'Arc de Triomphe underneath',
+    imageLeft: false
+  },
+  {
+    image: 'https://i.postimg.cc/g0NtMK7B/IMAG2980.jpg',
+    imageDescription: 'View from Arc de Triomphe',
     imageLeft: false
   },
   {
@@ -96,6 +111,28 @@ const highlights = [
     imageLeft: true
   },
   {
+    image: 'https://i.postimg.cc/L8WRZyKj/IMAG3040.jpg',
+    imageDescription: 'Inside Louvre',
+    imageLeft: true
+  },
+  {
+    image: 'https://i.postimg.cc/dtqqMkjZ/IMAG3042.jpg',
+    imageDescription: 'Inside Louvre',
+    imageLeft: true
+  },
+  {
+    image: 'https://i.postimg.cc/jS2t5p9s/DSC05018.jpg',
+    imageDescription: 'Mona Lisa',
+    text: 'The Mona Lisa is in reality pretty small',
+    imageLeft: true
+  },
+  {
+    image: 'https://i.postimg.cc/xjG0FyMS/DSC05006.jpg',
+    imageDescription: 'The Winged Victory of Samothrace',
+    text: 'The Winged Victory of Samothrace',
+    imageLeft: true
+  },
+  {
     image: 'https://i.postimg.cc/bJ1T7HVh/DSC04960.jpg',
     imageDescription: 'Gate Tuileries Garden',
     text:
@@ -103,11 +140,71 @@ const highlights = [
     imageLeft: true
   },
   {
+    image: 'https://i.postimg.cc/zBKJNTQK/DSC04980.jpg',
+    imageDescription: 'Tuileries Garden',
+    imageLeft: true
+  },
+  {
+    image: 'https://i.postimg.cc/MGhWg99z/DSC04970.jpg',
+    imageDescription: 'Streets of Paris',
+    imageLeft: false
+  },
+  {
+    image: 'https://i.postimg.cc/rySn3c7r/IMAG2996.jpg',
+    imageDescription: 'Disney store',
+    text:
+      "Paris is also a great city for shopping. If you won't be able to visit Disneyland Paris, you can still visit the Disney stores in Paris",
+    imageLeft: true
+  },
+  {
+    image: 'https://i.postimg.cc/cLvGZQgC/IMAG3082.jpg',
+    imageDescription: 'Galeries Lafayette',
+    text: 'Galeries Lafayette has expensive international shops of brands',
+    imageLeft: false
+  },
+  {
+    image: 'https://i.postimg.cc/D0cnJnnz/DSC05062.jpg',
+    imageDescription: 'Galeries Lafayette',
+    text: 'Galeries Lafayette has a beautiful ceiling',
+    imageLeft: false
+  },
+  {
+    image: 'https://i.postimg.cc/J7QLQ7Cr/DSC05078.jpg',
+    imageDescription: 'Sacré-Cœur',
+    text: 'Last, but not least. The Sacré-Cœur',
+    imageLeft: true
+  },
+  {
+    title: 'Food'
+  },
+  {
     image: 'https://i.postimg.cc/zXxdtf4X/IMG-5400.jpg',
     imageDescription: 'Parisan crêpe',
     text:
-      "Don't forget to eat a Parisan crêpe, croissants and a pain au chocolat",
+      "Don't forget to eat a Parisan crêpe, croissants, French cheese, French macarons, and a pain au chocolat 😉",
     imageLeft: false
+  },
+  {
+    image: 'https://i.postimg.cc/xTnxShSF/IMAG2990.jpg',
+    imageDescription: 'French bread',
+    imageLeft: false
+  },
+  {
+    image: 'https://i.postimg.cc/KYkQNyn4/IMAG2985.jpg',
+    imageDescription: 'French cheese',
+    imageLeft: true
+  },
+  {
+    image: 'https://i.postimg.cc/RVdPCdSC/IMAG2987.jpg',
+    imageDescription: 'Escargots',
+    text: 'Escargots, French delicacy consisting of cooked edible land snails',
+    imageLeft: true
+  },
+  {
+    image: 'https://i.postimg.cc/7Zj8Lf0V/IMAG3133.jpg',
+    imageDescription: 'French macarons',
+    text: 'Macarons can be great as a souvenir',
+    imageLeft: true
   }
 ]
 
