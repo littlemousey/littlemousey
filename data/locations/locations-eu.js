@@ -25,6 +25,8 @@ const locations = [
 
   // Europe
   { city: 'Leuven', coordinates: [50.879845, 4.700518] },
+  { city: 'Ans', coordinates: [50.6613547, 5.5076683] },
+  { city: 'Ieper', coordinates: [50.85125, 2.88419] },
   { city: 'Maaseik', coordinates: [51.094791, 5.79397] },
   { city: 'Bouillon', coordinates: [49.79557, 5.06811] },
   { city: 'Modave', coordinates: [50.442291, 5.30056] },

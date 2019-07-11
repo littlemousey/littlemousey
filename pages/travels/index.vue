@@ -15,6 +15,11 @@
           hard disk. You can find some journals of my travels here and maybe you
           get some inspiration for your next trip... 😊
         </p>
+        <p>
+          Click
+          <NuxtLink to="/travels/bigMap">here</NuxtLink> for a bigger version of
+          the map 🗺️
+        </p>
       </v-flex>
     </v-layout>
     <v-layout row wrap align-content-center>

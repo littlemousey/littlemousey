@@ -46,6 +46,10 @@ export default {
       default() {
         return [50, 20]
       }
+    },
+    bigMap: {
+      type: Boolean,
+      default: false
     }
   },
   data() {
@@ -55,6 +59,16 @@ export default {
   },
   computed: {
     resizeMap: function() {
+      if (this.bigMap) {
+        if (
+          this.$vuetify.breakpoint.name === 'sm' ||
+          this.$vuetify.breakpoint.name === 'xs'
+        ) {
+          return 'height: 80vh; width: 90vw'
+        } else {
+          return 'height: 70vh; width: 70vw'
+        }
+      }
       if (
         this.$vuetify.breakpoint.name === 'sm' ||
         this.$vuetify.breakpoint.name === 'xs'
