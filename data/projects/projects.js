@@ -29,7 +29,7 @@ const projects = [
   },
   {
     name: 'Pingu app',
-    text: 'Pingu app built with cordova',
+    text: 'Pingu app built with Cordova and Vue',
     image: '/img/projects/pingu-app.png',
     demo: 'https://serene-hoover-83a0b2.netlify.com',
     repo: 'https://github.com/littlemousey/pingu-app'
@@ -40,6 +40,20 @@ const projects = [
     image: '/img/projects/christmasVR.png',
     demo: 'https://littlemousey.github.io/ChristmasVR/',
     repo: 'https://github.com/littlemousey/ChristmasVR'
+  },
+  {
+    name: 'Mandelbrot fractal',
+    text: 'Mandelbrot fractal in JavaScript',
+    image: '/img/projects/mandelbrot.png',
+    demo: 'https://littlemousey.github.io/Mandelbrot/',
+    repo: 'https://github.com/littlemousey/Mandelbrot'
+  },
+  {
+    name: 'Pythagoras tree fractal',
+    text: 'Pythagoras tree fractal in JavaScript',
+    image: '/img/projects/pythagorastree.png',
+    demo: 'http://littlemousey.github.io/Pythagorastree_fractal/',
+    repo: 'https://github.com/littlemousey/Pythagorastree_fractal'
   }
 ]
 

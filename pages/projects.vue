@@ -5,10 +5,12 @@
         <h1>Little mousey's personal projects</h1>
         <p>
           Here is a selection of my personal projects. More projects can be
-          found on my Github
-          <a href="https://github.com/littlemousey"
-            ><font-awesome-icon :icon="['fab', 'github']"
-          /></a>
+          found on my
+          <a href="https://github.com/littlemousey">Github</a>
+          <font-awesome-icon
+            class="github-icon"
+            :icon="['fab', 'github-square']"
+          />
         </p>
       </v-flex>
     </v-layout>
@@ -43,6 +45,9 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+.github-icon {
+  color: black;
+}
 .v-btn {
   font-family: 'Courier New', Courier, monospace;
   font-weight: bold;

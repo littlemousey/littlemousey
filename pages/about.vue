@@ -26,7 +26,7 @@
           <v-card-text>
             This website is built with Vue.js, Nuxt, and Vuetify. You can find
             more projects of Little mousey on
-            <font-awesome-icon :icon="['fab', 'github']"
+            <font-awesome-icon :icon="['fab', 'github-square']"
           /></v-card-text>
         </v-card>
       </v-flex>
@@ -51,6 +51,18 @@
           <v-card-text>
             If you want to know more about the person behind little mousey
             <font-awesome-icon :icon="['fab', 'linkedin']" />
+          </v-card-text>
+        </v-card>
+      </v-flex>
+      <v-flex xs4 mx-2>
+        <v-card
+          hover
+          href="https://twitter.com/ansdenijs"
+          color="amber lighten-5"
+        >
+          <v-card-text>
+            You can contact me on twitter for questions and feedback
+            <font-awesome-icon :icon="['fab', 'twitter-square']" />
           </v-card-text>
         </v-card>
       </v-flex>

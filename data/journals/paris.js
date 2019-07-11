@@ -7,6 +7,9 @@ const header = {
 
 const highlights = [
   {
+    title: 'Sightseeing'
+  },
+  {
     image: 'https://i.postimg.cc/DyZd2T80/IMAG2913.jpg',
     imageDescription: 'Gare du Nord',
     text:
@@ -55,6 +58,7 @@ const highlights = [
   {
     image: 'https://i.postimg.cc/L5qKpWPW/IMAG2956.jpg',
     imageDescription: 'Eiffel tower',
+    text: 'This year the Eiffel tower celebrates its 130 years of existence',
     imageLeft: true
   },
   {
@@ -84,6 +88,12 @@ const highlights = [
   {
     image: 'https://i.postimg.cc/g0NtMK7B/IMAG2980.jpg',
     imageDescription: 'View from Arc de Triomphe',
+    imageLeft: false
+  },
+  {
+    image: 'https://i.postimg.cc/8P4R63yj/DSC04940.jpg',
+    imageDescription: 'View at Notre Dame from Arc de Triomphe',
+    text: 'The Notre Dame viewed from the Arc de Triomphe',
     imageLeft: false
   },
   {
@@ -150,6 +160,16 @@ const highlights = [
     imageLeft: false
   },
   {
+    image: 'https://i.postimg.cc/J7QLQ7Cr/DSC05078.jpg',
+    imageDescription: 'Sacré-Cœur',
+    text:
+      'Last, but not least. The Sacré-Cœur. It is a beautiful church, white on the outside but has beautiful artwork on the inside. You can take metro stop Anvers to the Sacré-Cœur.',
+    imageLeft: true
+  },
+  {
+    title: 'Shopping'
+  },
+  {
     image: 'https://i.postimg.cc/rySn3c7r/IMAG2996.jpg',
     imageDescription: 'Disney store',
     text:
@@ -167,12 +187,6 @@ const highlights = [
     imageDescription: 'Galeries Lafayette',
     text: 'Galeries Lafayette has a beautiful ceiling',
     imageLeft: false
-  },
-  {
-    image: 'https://i.postimg.cc/J7QLQ7Cr/DSC05078.jpg',
-    imageDescription: 'Sacré-Cœur',
-    text: 'Last, but not least. The Sacré-Cœur',
-    imageLeft: true
   },
   {
     title: 'Food'
@@ -219,7 +233,15 @@ const achievements = [
   },
   {
     achieved: true,
+    title: 'Visit the Louvre'
+  },
+  {
+    achieved: true,
     title: 'Visit the Sacré-Cœur'
+  },
+  {
+    achieved: true,
+    title: 'Take the metro'
   }
 ]
 

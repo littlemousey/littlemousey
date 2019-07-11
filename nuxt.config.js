@@ -79,7 +79,12 @@ export default {
         imports: [
           {
             set: '@fortawesome/free-brands-svg-icons',
-            icons: ['faGithub', 'faLinkedin', 'faMedium']
+            icons: [
+              'faGithubSquare',
+              'faLinkedin',
+              'faMedium',
+              'faTwitterSquare'
+            ]
           }
         ]
       }

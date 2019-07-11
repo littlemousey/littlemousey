@@ -5,12 +5,15 @@
         <leafletmap :markers="allMarkersCombined"></leafletmap>
       </v-flex>
     </v-layout>
-    <v-layout>
-      <v-flex text-xs-center>
+    <v-layout justify-center>
+      <v-flex xs12 md6 text-xs-center>
         <h1>This mouse loves traveling and exploring the world</h1>
         <p>
-          You can find some journals of my travels here. I will add more travel
-          posts later
+          Whenever I travel, I take a lot of pictures of the sights and culture
+          and environment 📷. I thought it would be nice to share these photos
+          and my learnings with others, otherwise it would just get wasted on my
+          hard disk. You can find some journals of my travels here and maybe you
+          get some inspiration for your next trip... 😊
         </p>
       </v-flex>
     </v-layout>
