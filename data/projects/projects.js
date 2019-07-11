@@ -54,6 +54,20 @@ const projects = [
     image: '/img/projects/pythagorastree.png',
     demo: 'http://littlemousey.github.io/Pythagorastree_fractal/',
     repo: 'https://github.com/littlemousey/Pythagorastree_fractal'
+  },
+  {
+    name: 'Pokédex vanilla JavaScript',
+    text: 'Pokédex built in vanilla JavaScript',
+    image: '/img/projects/pokedex-vanilla.png',
+    demo: 'https://littlemousey.github.io/pokedex/',
+    repo: 'https://github.com/littlemousey/pokedex'
+  },
+  {
+    name: 'Dragon fight RPG',
+    text: 'Dragon fight, a small RPG game in vanilla JavaScript',
+    image: '/img/projects/dragonfight.png',
+    demo: 'https://littlemousey.github.io/DragonFight/',
+    repo: 'https://github.com/littlemousey/DragonFight'
   }
 ]
 
