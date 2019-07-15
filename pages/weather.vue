@@ -57,6 +57,18 @@
 import { mapState } from 'vuex'
 export default {
   name: 'Weather',
+  head() {
+    return {
+      title: 'Weather',
+      meta: [
+        {
+          hid: 'littlemouseyweather',
+          name: 'Weather',
+          content: 'Weather in the Netherlands'
+        }
+      ]
+    }
+  },
   filters: {
     dateToTime(value) {
       return value.substring(11, 16)

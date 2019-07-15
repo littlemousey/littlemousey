@@ -27,6 +27,18 @@
 <script>
 export default {
   name: 'Homepage',
+  head() {
+    return {
+      title: 'Homepage',
+      meta: [
+        {
+          hid: 'littlemouseyhome',
+          name: 'Little mousey homepage',
+          content: 'The homepage of Little mousey'
+        }
+      ]
+    }
+  },
   data() {
     return {
       greeting: 'Welcome',

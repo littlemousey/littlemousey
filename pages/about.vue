@@ -72,7 +72,19 @@
 
 <script>
 export default {
-  name: 'About'
+  name: 'About',
+  head() {
+    return {
+      title: 'About',
+      meta: [
+        {
+          hid: 'littlemouseyabout',
+          name: 'About Little mousey',
+          content: 'About Little mousey'
+        }
+      ]
+    }
+  }
 }
 </script>
 

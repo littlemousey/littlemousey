@@ -39,10 +39,29 @@ import TripHighlight from '@/components/travelJournal/TripHighlight'
 import TripAchievements from '@/components/travelJournal/TripAchievements'
 
 export default {
+  head() {
+    return {
+      title: this.convertStringToTitle(this.$route.params.id),
+      meta: [
+        {
+          hid: `littlemousey${this.$route.params.id}`,
+          name: `${this.$route.params.id}`,
+          content: `Little mousey's journal on ${this.$route.params.id}`
+        }
+      ]
+    }
+  },
   components: { TripHeader, TripSubheader, TripHighlight, TripAchievements },
   async asyncData({ app, params }) {
     const journal = await app.$axios.$get(`/data/journals/${params.id}.json`)
     return { journal }
+  },
+  methods: {
+    convertStringToTitle(string) {
+      const firstLetter = string.charAt(0).toUpperCase()
+      const stringWithoutFirstLetter = string.slice(1)
+      return firstLetter + stringWithoutFirstLetter
+    }
   }
 }
 </script>

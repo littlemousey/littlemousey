@@ -33,6 +33,18 @@ import projects from '~/static/data/projects/projects'
 
 export default {
   name: 'Projects',
+  head() {
+    return {
+      title: 'Projects',
+      meta: [
+        {
+          hid: 'littlemouseyprojects',
+          name: 'Personal projects',
+          content: 'Front-end projects made by Little mousey'
+        }
+      ]
+    }
+  },
   components: {
     projectCard
   },

@@ -15,6 +15,19 @@ import destinations from '~/static/data/destinations/destinations'
 
 export default {
   name: 'BigMap',
+  head() {
+    return {
+      title: 'World map',
+      meta: [
+        {
+          hid: 'littlemouseymap',
+          name: "Little mousey's travels on world map",
+          content:
+            'World map which shows all the places Little mousey has visited'
+        }
+      ]
+    }
+  },
   components: {
     Leafletmap
   },

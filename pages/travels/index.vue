@@ -57,6 +57,18 @@ import destinations from '~/static/data/destinations/destinations'
 
 export default {
   name: 'Travels',
+  head() {
+    return {
+      title: 'Travels',
+      meta: [
+        {
+          hid: 'littlemouseytravels',
+          name: "Little mousey's travels",
+          content: "Read journals of Little mousey's travels"
+        }
+      ]
+    }
+  },
   components: {
     destinationCard,
     Leafletmap
