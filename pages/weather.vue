@@ -63,7 +63,7 @@ export default {
     },
     dateToHour(value) {
       const hour = value.substring(11, 13)
-      if (parseInt(hour) < 12) {
+      if (parseInt(hour) < 13) {
         return hour + 'AM'
       } else {
         const hourInPM = parseInt(hour) - 12
