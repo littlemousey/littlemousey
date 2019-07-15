@@ -29,7 +29,7 @@
 
 <script>
 import projectCard from '~/components/projectCard'
-import projects from '~/data/projects/projects'
+import projects from '~/static/data/projects/projects'
 
 export default {
   name: 'Projects',

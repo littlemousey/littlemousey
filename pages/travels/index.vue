@@ -48,12 +48,12 @@
 </template>
 
 <script>
-import locations from '~/data/locations/locations-eu'
-import locationsNL from '~/data/locations/locations-nl'
-import locationsAsia from '~/data/locations/locations-asia'
+import locations from '~/static/data/locations/locations-eu'
+import locationsNL from '~/static/data/locations/locations-nl'
+import locationsAsia from '~/static/data/locations/locations-asia'
 import destinationCard from '~/components/destinationCard'
 import Leafletmap from '~/components/leafletmap'
-import destinations from '~/data/destinations/destinations'
+import destinations from '~/static/data/destinations/destinations'
 
 export default {
   name: 'Travels',
