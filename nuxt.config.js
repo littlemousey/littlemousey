@@ -99,7 +99,9 @@ export default {
    ** Axios module configuration
    ** See https://axios.nuxtjs.org/options
    */
-  axios: {},
+  axios: {
+    baseURL: '/'
+  },
   /*
    ** vuetify module configuration
    ** https://github.com/nuxt-community/vuetify-module
@@ -124,6 +126,7 @@ export default {
     extend(config, ctx) {}
   },
   generate: {
-    devtools: true
+    devtools: true,
+    routes: ['/travels/paris', '/travels/schiermonnikoog']
   }
 }
