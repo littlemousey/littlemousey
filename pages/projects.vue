@@ -1,5 +1,5 @@
 <template>
-  <v-container grid-list-md text-xs-center class="projects-page">
+  <v-container grid-list-md class="projects-page text-center">
     <v-layout>
       <v-flex>
         <h1>Little mousey's personal projects</h1>

@@ -1,12 +1,12 @@
 <template>
   <section class="travel">
-    <v-layout mb-5 justify-center>
-      <v-flex xs8 md12 mt-2>
+    <v-layout mb-12 justify-center>
+      <v-flex xs8 md8 mt-4>
         <leafletmap :markers="allMarkersCombined"></leafletmap>
       </v-flex>
     </v-layout>
     <v-layout justify-center>
-      <v-flex xs12 md6 text-xs-center>
+      <v-flex xs12 md6 text-center>
         <h1>This mouse loves traveling and exploring the world</h1>
         <p>
           Whenever I travel, I take a lot of pictures of the sights and culture
@@ -34,7 +34,7 @@
       ></destination-card>
     </v-layout>
     <v-layout row justify-center>
-      <v-flex sx12 md6 my-5>
+      <v-flex sx12 md6 my-10>
         <span
           >If you are interested in old journals of mine (in Dutch) about my
           travels in 🇯🇵Japan, 🇷🇺Russia and 🇨🇳China: go to

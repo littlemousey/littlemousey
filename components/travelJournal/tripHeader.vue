@@ -3,7 +3,7 @@
     <v-flex xs12>
       <v-card class="my-2">
         <v-img class="white--text" :src="imgUrl" height="300">
-          <v-container fill-height fluid>
+          <v-container class="fill-height" fluid>
             <v-layout fill-height>
               <v-flex xs12 align-end flexbox>
                 <span class="headline">{{ title }}</span>

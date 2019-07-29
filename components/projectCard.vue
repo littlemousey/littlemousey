@@ -7,8 +7,8 @@
       </v-card-title>
       <v-card-actions>
         <v-layout align-center justify-space-around>
-          <v-btn flat color="orange" :href="demoLink">Demo</v-btn>
-          <v-btn flat color="orange" :href="repoUrl">Code</v-btn>
+          <v-btn text color="orange" :href="demoLink">Demo</v-btn>
+          <v-btn text color="orange" :href="repoUrl">Code</v-btn>
         </v-layout>
       </v-card-actions>
     </v-card>

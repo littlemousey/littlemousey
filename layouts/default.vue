@@ -1,48 +1,41 @@
 <template>
   <v-app class="app">
-    <v-navigation-drawer v-model="drawer" fixed app clipped>
-      <v-toolbar flat class="transparent">
-        <v-list class="pa-0">
-          <v-list-tile avatar>
-            <v-list-tile-avatar>
-              <img src="/img/littlemousey_wave.png" />
-            </v-list-tile-avatar>
+    <v-navigation-drawer v-model="drawer" width="300" fixed app clipped>
+      <v-list dense nav class="py-0">
+        <v-list-item>
+          <v-list-item-avatar size="70">
+            <img src="/img/littlemousey_wave.png" />
+          </v-list-item-avatar>
+        </v-list-item>
 
-            <v-list-tile-content>
-              <v-list-tile-title>Navigation</v-list-tile-title>
-            </v-list-tile-content>
-          </v-list-tile>
-        </v-list>
-      </v-toolbar>
-      <v-list>
-        <v-list-tile
-          v-for="(item, i) in items"
-          :key="i"
+        <v-list-item
+          v-for="item in items"
+          :key="item.title"
           :to="item.to"
           router
-          exact
         >
-          <v-list-tile-action>
+          <v-list-item-icon>
             <v-icon>{{ item.icon }}</v-icon>
-          </v-list-tile-action>
-          <v-list-tile-content>
-            <v-list-tile-title v-text="item.title" />
-          </v-list-tile-content>
-        </v-list-tile>
+          </v-list-item-icon>
+
+          <v-list-item-content>
+            <v-list-item-title class="subtitle-1">{{
+              item.title
+            }}</v-list-item-title>
+          </v-list-item-content>
+        </v-list-item>
       </v-list>
     </v-navigation-drawer>
-    <v-toolbar color="blue darken-4" dark fixed app>
-      <v-toolbar-side-icon @click="drawer = !drawer" />
+    <v-app-bar color="blue darken-4" dark fixed app clipped-left>
+      <v-app-bar-nav-icon @click="drawer = !drawer" />
       <v-toolbar-title
         class="title home-link"
         @click="goToHome()"
         v-text="title"
       />
       <v-spacer />
-      <v-toolbar-items class="hidden-sm-and-down">
-        <weather-button></weather-button>
-      </v-toolbar-items>
-    </v-toolbar>
+      <weather-button></weather-button>
+    </v-app-bar>
     <v-content>
       <v-container>
         <nuxt />
@@ -120,9 +113,11 @@ export default {
   font-family: 'Lora', serif;
 }
 
-.v-toolbar--fixed {
+.v-app-bar {
   /* Toolbar z-index has to be higher than Leaflet map */
-  z-index: 1100;
+  &.v-toolbar {
+    z-index: 1100;
+  }
 }
 
 .v-navigation-drawer--is-mobile {

@@ -43,7 +43,7 @@
     </v-layout>
     <v-layout>
       <v-flex xs12 sm8 md8>
-        <div class="text-xs-right mt-3">
+        <div class="text-right mt-3">
           Weather data is provided by
           <a href="https://www.buienradar.nl">buienradar.nl</a> Images are from
           <a href="https://unsplash.com/">Unsplash</a>

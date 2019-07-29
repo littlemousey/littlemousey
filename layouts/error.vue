@@ -1,7 +1,7 @@
 <template>
   <v-app>
     <v-layout v-if="error.statusCode === 404">
-      <v-flex text-xs-center>
+      <v-flex text-center>
         <img
           src="/img/littlemousey_wave.png"
           alt="little mousey wave"
@@ -18,7 +18,7 @@
       </v-flex>
     </v-layout>
     <v-layout v-else>
-      <v-flex text-xs-center>
+      <v-flex text-center>
         <img
           src="/img/littlemousey_wave.png"
           alt="little mousey wave"

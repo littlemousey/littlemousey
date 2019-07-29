@@ -14,10 +14,10 @@ module.exports = {
     'prettier',
     'prettier/vue'
   ],
-  plugins: [
-    'prettier'
-  ],
+  plugins: ['prettier', 'vuetify'],
   // add your custom rules here
   rules: {
+    'vuetify/grid-unknown-attributes': 'error'
+    // 'vuetify/no-legacy-grid': 'error'
   }
 }
