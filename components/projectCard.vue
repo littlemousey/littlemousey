@@ -3,7 +3,7 @@
     <v-card hover :href="demoLink" class="mx-2 my-2">
       <v-img :src="image"> </v-img>
       <v-card-title class="justify-center">
-        <div>{{ text }}</div>
+        <div class="title">{{ text }}</div>
       </v-card-title>
       <v-card-actions>
         <v-layout align-center justify-space-around>
