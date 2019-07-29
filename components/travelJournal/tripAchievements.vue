@@ -2,8 +2,8 @@
   <v-layout row wrap align-start justify-center>
     <v-flex xs12 sm10 md4 my-5>
       <v-card>
-        <v-toolbar color="blue darken-4" dark>
-          <v-toolbar-title>Achievements 🐭</v-toolbar-title>
+        <v-toolbar :color="color" dark>
+          <v-toolbar-title>{{ title }}</v-toolbar-title>
         </v-toolbar>
         <v-list>
           <v-list-tile
@@ -12,7 +12,9 @@
             avatar
           >
             <v-list-tile-action>
-              <v-icon v-if="achievement.achieved" color="red">star</v-icon>
+              <v-icon v-if="achievement.achieved" :color="iconColor">{{
+                icon
+              }}</v-icon>
             </v-list-tile-action>
 
             <v-list-tile-content>
@@ -29,6 +31,22 @@
 export default {
   name: 'TripAchievements',
   props: {
+    title: {
+      type: String,
+      required: true
+    },
+    color: {
+      type: String,
+      default: 'blue darken-4'
+    },
+    icon: {
+      type: String,
+      default: ''
+    },
+    iconColor: {
+      type: String,
+      default: 'red'
+    },
     achievements: {
       type: Array,
       required: true

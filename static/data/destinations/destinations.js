@@ -35,6 +35,22 @@ const destinations = [
     image: 'https://i.postimg.cc/VNhz7sHh/destination-groningen.jpg',
     link: '/travels/test',
     button: 'Will come soon'
+  },
+  {
+    title: 'South Korea',
+    text:
+      'Beautiful country in Eastern Asia. Famous for kimchi, K-Pop, E-sports, and Korean BBQ. But South-Korea also has beautiful nature, rich culture, and amazing landscapes',
+    image: 'https://i.postimg.cc/8zgMxQHR/destination-south-korea.jpg',
+    link: '/travels/test',
+    button: 'Will come soon'
+  },
+  {
+    title: 'Faro',
+    text:
+      "City in the Algarve region in Portugal. Has it's own harbour and airport",
+    image: 'https://i.postimg.cc/02w7t2p5/destination-faro.jpg',
+    link: '/travels/test',
+    button: 'Will come soon'
   }
 ]
 

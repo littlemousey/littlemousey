@@ -51,6 +51,7 @@
 import locations from '~/static/data/locations/locations-eu'
 import locationsNL from '~/static/data/locations/locations-nl'
 import locationsAsia from '~/static/data/locations/locations-asia'
+import locationsOld from '~/static/data/locations/locations-until-2010'
 import destinationCard from '~/components/destinationCard'
 import Leafletmap from '~/components/leafletmap'
 import destinations from '~/static/data/destinations/destinations'
@@ -78,12 +79,16 @@ export default {
       markers: locations,
       markersNL: locationsNL,
       markersAsia: locationsAsia,
+      markersOld: locationsOld,
       destinations: destinations
     }
   },
   computed: {
     allMarkersCombined() {
-      return this.markers.concat(this.markersNL).concat(this.markersAsia)
+      return this.markers
+        .concat(this.markersNL)
+        .concat(this.markersAsia)
+        .concat(this.markersOld)
     }
   }
 }

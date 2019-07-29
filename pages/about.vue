@@ -67,10 +67,19 @@
         </v-card>
       </v-flex>
     </v-layout>
+    <TripAchievements
+      :title="title"
+      :color="color"
+      :icon="icon"
+      :icon-color="iconColor"
+      :achievements="technologies"
+    ></TripAchievements>
   </v-container>
 </template>
 
 <script>
+import TripAchievements from '@/components/travelJournal/TripAchievements'
+import technologies from '@/static/data/projects/technologies'
 export default {
   name: 'About',
   head() {
@@ -83,6 +92,18 @@ export default {
           content: 'About Little mousey'
         }
       ]
+    }
+  },
+  components: {
+    TripAchievements
+  },
+  data: function() {
+    return {
+      title: 'My Front-end technology stack',
+      color: 'teal',
+      icon: 'check',
+      iconColor: 'green',
+      technologies: technologies
     }
   }
 }
