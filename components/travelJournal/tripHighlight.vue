@@ -1,7 +1,7 @@
 <template>
   <div>
-    <v-layout v-if="textHighlightShouldComeAfter" row wrap my-5>
-      <v-flex xs12 md5 mx-2>
+    <v-row v-if="textHighlightShouldComeAfter" class="my-5">
+      <v-col class="mx-2" cols="12" md="5">
         <v-card v-if="imageUrl">
           <v-img
             :src="imageUrl"
@@ -9,25 +9,25 @@
             :alt="imageDescription"
           ></v-img>
         </v-card>
-      </v-flex>
-      <v-flex xs12 md5 mx-2 align-self-center>
+      </v-col>
+      <v-col class="mx-2" cols="12" md="5" align-self="center">
         <div>
           {{ text }}
         </div>
-      </v-flex>
-    </v-layout>
-    <v-layout v-if="!textHighlightShouldComeAfter" row wrap my-5>
-      <v-flex xs12 md5 mx-2 align-self-center>
+      </v-col>
+    </v-row>
+    <v-row v-if="!textHighlightShouldComeAfter" class="my-5">
+      <v-col class="mx-2" cols="12" md="5" align-self="center">
         <div>
           {{ text }}
         </div>
-      </v-flex>
-      <v-flex xs12 md5 mx-2>
+      </v-col>
+      <v-row class="xs12 md5 mx-2">
         <v-card v-if="imageUrl">
           <v-img :src="imageUrl" max-height="450px"></v-img>
         </v-card>
-      </v-flex>
-    </v-layout>
+      </v-row>
+    </v-row>
   </div>
 </template>
 

@@ -1,18 +1,18 @@
 <template>
-  <v-flex xs12 sm6 md4>
+  <v-col cols="12" sm="6" md="4">
     <v-card hover :href="demoLink" class="mx-2 my-2">
       <v-img :src="image"> </v-img>
       <v-card-title class="justify-center">
         <div class="title">{{ text }}</div>
       </v-card-title>
       <v-card-actions>
-        <v-layout align-center justify-space-around>
+        <v-row align="center" justify="space-around">
           <v-btn text color="orange" :href="demoLink">Demo</v-btn>
           <v-btn text color="orange" :href="repoUrl">Code</v-btn>
-        </v-layout>
+        </v-row>
       </v-card-actions>
     </v-card>
-  </v-flex>
+  </v-col>
 </template>
 
 <script>

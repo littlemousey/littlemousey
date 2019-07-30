@@ -1,5 +1,5 @@
 <template>
-  <v-flex xs12 sm5 md3 mx-2 mt-4>
+  <v-col cols="12" sm="5" md="3">
     <v-card hover nuxt :to="link">
       <v-img :src="imageUrl"></v-img>
 
@@ -16,7 +16,7 @@
         }}</v-btn>
       </v-card-actions>
     </v-card>
-  </v-flex>
+  </v-col>
 </template>
 
 <script>

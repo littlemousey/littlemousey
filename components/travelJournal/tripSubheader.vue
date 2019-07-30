@@ -1,11 +1,11 @@
 <template>
-  <v-layout row wrap>
-    <v-flex xs12>
-      <div class="display-1">
+  <v-row>
+    <v-col cols="12">
+      <h3 class="display-1 my-4 text-underline">
         {{ title }}
-      </div>
-    </v-flex>
-  </v-layout>
+      </h3>
+    </v-col>
+  </v-row>
 </template>
 
 <script>
@@ -14,3 +14,9 @@ export default {
   props: { title: { type: String, default: '' } }
 }
 </script>
+
+<style lang="scss" scoped>
+.text-underline {
+  text-decoration: underline;
+}
+</style>

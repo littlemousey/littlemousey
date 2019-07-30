@@ -1,7 +1,7 @@
 <template>
   <v-app>
-    <v-layout v-if="error.statusCode === 404">
-      <v-flex text-center>
+    <v-row v-if="error.statusCode === 404">
+      <v-col class="text-center">
         <img
           src="/img/littlemousey_wave.png"
           alt="little mousey wave"
@@ -15,10 +15,10 @@
             Home page
           </NuxtLink>
         </p>
-      </v-flex>
-    </v-layout>
-    <v-layout v-else>
-      <v-flex text-center>
+      </v-col>
+    </v-row>
+    <v-row v-else>
+      <v-col class="text-center">
         <img
           src="/img/littlemousey_wave.png"
           alt="little mousey wave"
@@ -36,8 +36,8 @@
           If the error happens frequently, do let me
           <a href="https://twitter.com/ansdenijs">know</a>
         </p>
-      </v-flex>
-    </v-layout>
+      </v-col>
+    </v-row>
   </v-app>
 </template>
 

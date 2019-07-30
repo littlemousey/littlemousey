@@ -1,27 +1,29 @@
 <template>
-  <v-layout align-center justify-center column fill-height>
-    <v-flex>
+  <span>
+    <v-row justify="center">
       <transition appear appear-to-class="fold-out">
         <p class="display-3 font-weight-medium">Little Mousey</p>
       </transition>
-    </v-flex>
-    <v-flex class="text-md-center">
+    </v-row>
+    <v-row justify="center">
       <h1>{{ greeting }}</h1>
-      <p>
+    </v-row>
+    <v-row justify="center">
+      <p class="text-center">
         You can find an overview of Little mousey's personal projects and
         travels on this website. <br />
         Enjoy! 🐭
       </p>
-    </v-flex>
-    <v-flex>
+    </v-row>
+    <v-row justify="center">
       <img src="/img/haveamiceday.png" alt="Have a mice day" />
-    </v-flex>
-    <v-flex>
+    </v-row>
+    <v-row justify="center">
       <p class="title">
         {{ currentWord }}
       </p>
-    </v-flex>
-  </v-layout>
+    </v-row>
+  </span>
 </template>
 
 <script>

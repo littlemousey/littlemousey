@@ -1,6 +1,6 @@
 <template>
-  <v-layout row wrap align-start justify-center>
-    <v-flex xs12 sm10 md4 my-5>
+  <v-row align="start" justify="center">
+    <v-col class="my-5" cols="12" sm="10" md="4">
       <v-card>
         <v-toolbar :color="color" dark>
           <v-toolbar-title>{{ title }}</v-toolbar-title>
@@ -22,8 +22,8 @@
           </v-list-item>
         </v-list>
       </v-card>
-    </v-flex>
-  </v-layout>
+    </v-col>
+  </v-row>
 </template>
 
 <script>
