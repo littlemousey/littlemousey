@@ -1,7 +1,7 @@
 <template>
-  <v-container grid-list-md text-xs-center class="projects-page">
-    <v-layout>
-      <v-flex>
+  <v-container class="projects-page text-center">
+    <v-row>
+      <v-col>
         <h1>Little mousey's personal projects</h1>
         <p>
           Here is a selection of my personal projects. More projects can be
@@ -12,9 +12,9 @@
             :icon="['fab', 'github-square']"
           />
         </p>
-      </v-flex>
-    </v-layout>
-    <v-layout align-center justify-center row wrap>
+      </v-col>
+    </v-row>
+    <v-row align="center" justify="center">
       <project-card
         v-for="project in projects"
         :key="project.name"
@@ -23,7 +23,7 @@
         :demo-link="project.demo"
         :repo-url="project.repo"
       ></project-card>
-    </v-layout>
+    </v-row>
   </v-container>
 </template>
 

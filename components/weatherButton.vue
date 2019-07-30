@@ -1,5 +1,5 @@
 <template>
-  <v-btn v-if="weatherData" flat class="font-weight-bold" nuxt to="weather"
+  <v-btn v-if="weatherData" text class="font-weight-bold" nuxt to="weather"
     ><span class="weather-icon">{{ weatherIcon }}</span
     >{{ weatherData.temperature }}°C<span class="weather-icon">{{
       dayNightIndicator

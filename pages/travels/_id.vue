@@ -23,16 +23,16 @@
       title="Achievements 🐭"
       icon="star"
     ></trip-achievements>
-    <v-layout row wrap align-start justify-center>
-      <v-flex xs6 my-5>
-        <div class="text-xs-center">
+    <v-row align="start" justify="center">
+      <v-col class="my-5" cols="6">
+        <div class="text-center">
           <div>Period of visit: {{ journal.dateVisited }}</div>
           <div class="grey--text">
             Images are copyrighted, please ask before using the images.
           </div>
         </div>
-      </v-flex>
-    </v-layout>
+      </v-col>
+    </v-row>
   </div>
 </template>
 

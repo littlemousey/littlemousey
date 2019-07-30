@@ -1,30 +1,29 @@
 <template>
-  <v-layout row wrap align-start justify-center>
-    <v-flex xs12 sm10 md4 my-5>
+  <v-row align="start" justify="center">
+    <v-col class="my-5" cols="12" sm="10" md="4">
       <v-card>
         <v-toolbar :color="color" dark>
           <v-toolbar-title>{{ title }}</v-toolbar-title>
         </v-toolbar>
         <v-list>
-          <v-list-tile
+          <v-list-item
             v-for="achievement in achievements"
             :key="achievement.title"
-            avatar
           >
-            <v-list-tile-action>
+            <v-list-item-action>
               <v-icon v-if="achievement.achieved" :color="iconColor">{{
                 icon
               }}</v-icon>
-            </v-list-tile-action>
+            </v-list-item-action>
 
-            <v-list-tile-content>
-              <v-list-tile-title v-text="achievement.title"></v-list-tile-title>
-            </v-list-tile-content>
-          </v-list-tile>
+            <v-list-item-content>
+              <v-list-item-title v-text="achievement.title"></v-list-item-title>
+            </v-list-item-content>
+          </v-list-item>
         </v-list>
       </v-card>
-    </v-flex>
-  </v-layout>
+    </v-col>
+  </v-row>
 </template>
 
 <script>

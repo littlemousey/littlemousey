@@ -1,22 +1,25 @@
 <template>
-  <v-layout row wrap align-start justify-center>
-    <v-flex xs12>
-      <v-card class="my-2">
-        <v-img class="white--text" :src="imgUrl" height="300">
-          <v-container fill-height fluid>
-            <v-layout fill-height>
-              <v-flex xs12 align-end flexbox>
-                <span class="headline">{{ title }}</span>
-              </v-flex>
-            </v-layout>
-          </v-container>
-        </v-img>
-      </v-card>
-    </v-flex>
-    <v-flex xs6 my-5>
-      <div>{{ text }}</div>
-    </v-flex>
-  </v-layout>
+  <div>
+    <v-row align="start" justify="center">
+      <v-col cols="12">
+        <v-card class="my-5">
+          <v-img class="white--text" :src="imgUrl" height="300">
+            <v-card-title class="align-end fill-height">{{
+              title
+            }}</v-card-title>
+          </v-img>
+        </v-card>
+      </v-col>
+    </v-row>
+    <v-row justify="center"
+      ><h1 class="display-3 text-center">{{ title }}</h1></v-row
+    >
+    <v-row class="my-10" justify="center">
+      <v-col cols="10" md="6"
+        ><div class="text-center">{{ text }}</div></v-col
+      >
+    </v-row>
+  </div>
 </template>
 
 <script>

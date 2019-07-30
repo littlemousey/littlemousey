@@ -68,7 +68,6 @@ export default {
    ** Nuxt.js modules
    */
   modules: [
-    '@nuxtjs/vuetify',
     // Doc: https://axios.nuxtjs.org/usage
     '@nuxtjs/axios',
     '@nuxtjs/pwa',
@@ -91,6 +90,9 @@ export default {
     ],
     '@nuxtjs/sitemap'
   ],
+
+  devModules: ['@nuxtjs/vuetify'],
+
   sitemap: {
     hostname: 'http://littlemousey.com',
     routes: []

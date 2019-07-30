@@ -17,7 +17,8 @@ const destinations = [
   },
   {
     title: 'Kevelaer',
-    text: 'Pilgrimage town in Germany',
+    text:
+      'Pilgrimage town in Germany. It is the largest Catholic pilgrimage location within north-western Europe.',
     image: 'https://i.postimg.cc/rsXMknTC/destination-kevelaer.jpg',
     link: '/travels/test',
     button: 'Will come soon'

@@ -1,9 +1,9 @@
 <template>
-  <v-layout justify-center>
-    <v-flex xs12 mt-2>
+  <v-row justify="center">
+    <v-col class="mt-2" cols="12">
       <leafletmap :markers="allMarkersCombined" :big-map="true"></leafletmap>
-    </v-flex>
-  </v-layout>
+    </v-col>
+  </v-row>
 </template>
 
 <script>

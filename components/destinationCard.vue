@@ -1,24 +1,22 @@
 <template>
-  <v-flex xs12 sm5 md3 mx-1 mt-2>
+  <v-col cols="12" sm="5" md="3">
     <v-card hover nuxt :to="link">
       <v-img :src="imageUrl"></v-img>
 
       <v-card-title primary-title>
         <div>
-          <h3 class="headline mb-0">{{ title }}</h3>
-          <div>
-            {{ text }}
-          </div>
+          {{ title }}
         </div>
+        <div class="grey--text subtitle-1">{{ text }}</div>
       </v-card-title>
 
       <v-card-actions>
-        <v-btn flat color="orange" small nuxt :to="link">{{
+        <v-btn text color="orange" small nuxt :to="link">{{
           buttonText
         }}</v-btn>
       </v-card-actions>
     </v-card>
-  </v-flex>
+  </v-col>
 </template>
 
 <script>

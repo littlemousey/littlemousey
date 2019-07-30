@@ -1,12 +1,10 @@
 <template>
   <section class="travel">
-    <v-layout mb-5 justify-center>
-      <v-flex xs8 md12 mt-2>
-        <leafletmap :markers="allMarkersCombined"></leafletmap>
-      </v-flex>
-    </v-layout>
-    <v-layout justify-center>
-      <v-flex xs12 md6 text-xs-center>
+    <v-row class="mb-12 mt-5" justify="center">
+      <leafletmap :markers="allMarkersCombined"></leafletmap>
+    </v-row>
+    <v-row justify="center">
+      <v-col class="text-center" cols="12" md="6">
         <h1>This mouse loves traveling and exploring the world</h1>
         <p>
           Whenever I travel, I take a lot of pictures of the sights and culture
@@ -20,9 +18,9 @@
           <NuxtLink to="/travels/bigMap">here</NuxtLink> for a bigger version of
           the map 🗺️
         </p>
-      </v-flex>
-    </v-layout>
-    <v-layout row wrap align-content-center>
+      </v-col>
+    </v-row>
+    <v-row align-content="center">
       <destination-card
         v-for="destination in destinations"
         :key="destination.title"
@@ -32,9 +30,9 @@
         :link="destination.link"
         :button-text="destination.button"
       ></destination-card>
-    </v-layout>
-    <v-layout row justify-center>
-      <v-flex sx12 md6 my-5>
+    </v-row>
+    <v-row justify="center">
+      <v-col class="my-10" md="6" cols="12">
         <span
           >If you are interested in old journals of mine (in Dutch) about my
           travels in 🇯🇵Japan, 🇷🇺Russia and 🇨🇳China: go to
@@ -42,8 +40,8 @@
         <span
           ><a href="https://ansdenijs.waarbenjij.nu/">waarbenjij.nu</a>🧭</span
         >
-      </v-flex>
-    </v-layout>
+      </v-col>
+    </v-row>
   </section>
 </template>
 
