@@ -6,21 +6,20 @@
           <v-toolbar-title>{{ title }}</v-toolbar-title>
         </v-toolbar>
         <v-list>
-          <v-list-tile
+          <v-list-item
             v-for="achievement in achievements"
             :key="achievement.title"
-            avatar
           >
-            <v-list-tile-action>
+            <v-list-item-action>
               <v-icon v-if="achievement.achieved" :color="iconColor">{{
                 icon
               }}</v-icon>
-            </v-list-tile-action>
+            </v-list-item-action>
 
-            <v-list-tile-content>
-              <v-list-tile-title v-text="achievement.title"></v-list-tile-title>
-            </v-list-tile-content>
-          </v-list-tile>
+            <v-list-item-content>
+              <v-list-item-title v-text="achievement.title"></v-list-item-title>
+            </v-list-item-content>
+          </v-list-item>
         </v-list>
       </v-card>
     </v-flex>
