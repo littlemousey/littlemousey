@@ -68,6 +68,13 @@ const projects = [
     image: '/img/projects/dragonfight.png',
     demo: 'https://littlemousey.github.io/DragonFight/',
     repo: 'https://github.com/littlemousey/DragonFight'
+  },
+  {
+    name: 'Quiz game',
+    text: 'Quiz game built with React',
+    image: '/img/projects/react-quiz.png',
+    demo: 'https://tender-kepler-f8d86c.netlify.com',
+    repo: 'https://github.com/littlemousey/react-quiz'
   }
 ]
 
