@@ -1,0 +1,57 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Achievements renders correctly 1`] = `
+<v-row-stub
+  align="start"
+  justify="center"
+  tag="div"
+>
+  <v-col-stub
+    class="my-5"
+    cols="12"
+    md="4"
+    sm="10"
+    tag="div"
+  >
+    <v-card-stub
+      loaderheight="4"
+      tag="div"
+    >
+      <v-toolbar-stub
+        color="blue darken-4"
+        dark="true"
+        extensionheight="48"
+        src=""
+        tag="header"
+        tile="true"
+      >
+        <v-toolbar-title-stub>
+          title
+        </v-toolbar-title-stub>
+      </v-toolbar-stub>
+       
+      <v-list-stub
+        tag="div"
+        tile="true"
+      >
+        <v-list-item-stub
+          activeclass=""
+          tag="div"
+        >
+          <v-list-item-action-stub>
+            <v-icon-stub
+              color="red"
+            >
+              
+            </v-icon-stub>
+          </v-list-item-action-stub>
+           
+          <v-list-item-content-stub>
+            <v-list-item-title-stub />
+          </v-list-item-content-stub>
+        </v-list-item-stub>
+      </v-list-stub>
+    </v-card-stub>
+  </v-col-stub>
+</v-row-stub>
+`;

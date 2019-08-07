@@ -1,0 +1,65 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Trip header renders correctly 1`] = `
+<div>
+  <v-row-stub
+    align="start"
+    justify="center"
+    tag="div"
+  >
+    <v-col-stub
+      cols="12"
+      tag="div"
+    >
+      <v-card-stub
+        class="my-5"
+        loaderheight="4"
+        tag="div"
+      >
+        <v-img-stub
+          class="white--text"
+          height="300"
+          position="center center"
+          src="img.png"
+          transition="fade-transition"
+        >
+          <v-card-title-stub
+            class="align-end fill-height"
+          >
+            title
+          </v-card-title-stub>
+        </v-img-stub>
+      </v-card-stub>
+    </v-col-stub>
+  </v-row-stub>
+   
+  <v-row-stub
+    justify="center"
+    tag="div"
+  >
+    <h1
+      class="display-3 text-center"
+    >
+      title
+    </h1>
+  </v-row-stub>
+   
+  <v-row-stub
+    class="my-10"
+    justify="center"
+    tag="div"
+  >
+    <v-col-stub
+      cols="10"
+      md="6"
+      tag="div"
+    >
+      <div
+        class="text-center"
+      >
+        text
+      </div>
+    </v-col-stub>
+  </v-row-stub>
+</div>
+`;

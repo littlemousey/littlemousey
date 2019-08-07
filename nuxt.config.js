@@ -33,7 +33,10 @@ export default {
       { name: 'twitter:card', content: 'summary_large_image' },
       { name: 'twitter:site', content: 'http://littlemousey.com/' },
       { name: 'twitter:title', content: 'Little mousey' },
-      { name: 'twitter:description', content: 'Where little mousey lives' },
+      {
+        name: 'twitter:description',
+        content: 'Home of a little coding mouse'
+      },
       {
         name: 'twitter:image',
         content: 'https://i.postimg.cc/LXS82y95/littlemousey-avatar.png'

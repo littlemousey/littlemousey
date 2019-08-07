@@ -13,21 +13,31 @@ export default {
   name: 'WeatherButton',
   data() {
     return {
-      weatherData: null
+      weatherData: null,
+      weatherIcons: [
+        { name: 'wind', icon: '💨' },
+        { name: 'bewolkt', icon: '☁️' },
+        { name: 'zonnig', icon: '☀️' },
+        { name: 'regen', icon: '🌧️' },
+        { name: 'onweer', icon: '🌩️' },
+        { name: 'sneeuw', icon: '🌨️' },
+        { name: 'vorst', icon: '❄️' },
+        { name: 'overig', icon: '🌤️' }
+      ]
     }
   },
   computed: {
     weatherIcon() {
-      if (this.weatherData.weatherdescription.includes('bewolkt')) {
-        return '☁️'
-      }
-      if (this.weatherData.weatherdescription.includes('zonnig')) {
-        return '☀️'
-      }
-      if (this.weatherData.weatherdescription.includes('regen')) {
-        return '🌧️'
-      }
-      return '🌤️'
+      const currentWeatherDisplay = this.weatherIcons.find(
+        (weatherOption, index, optionList) => {
+          return this.weatherData.weatherdescription.includes(
+            weatherOption.name
+          )
+        }
+      )
+      return currentWeatherDisplay
+        ? currentWeatherDisplay.icon
+        : this.weatherIcons[this.weatherIcons.length - 1].icon
     },
     ...mapState('weather', ['sunrise', 'sunset']),
     dayNightIndicator() {
