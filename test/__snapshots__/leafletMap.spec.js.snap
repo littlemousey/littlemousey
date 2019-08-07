@@ -1,0 +1,46 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Leaflet map renders correctly 1`] = `
+<no-ssr-stub>
+  <lmap-stub
+    center="50,20"
+    crs="[object Object]"
+    options="[object Object]"
+    style="height: 300px; width: 1000px;"
+    worldcopyjump="true"
+    zoom="2"
+  >
+    <ltilelayer-stub
+      opacity="1"
+      options="[object Object]"
+      pane="tilePane"
+      tilelayerclass="function tileLayer(url, options) {
+	return new TileLayer(url, options);
+}"
+      tilesize="256"
+      url="http://{s}.tile.osm.org/{z}/{x}/{y}.png"
+      visible="true"
+      zindex="1"
+    />
+     
+    <v-marker-cluster-stub
+      options="[object Object]"
+    >
+      <lmarker-stub
+        icon="[object Object]"
+        latlng="-6.17511,106.865036"
+        options="[object Object]"
+        pane="markerPane"
+        visible="true"
+      >
+        <lpopup-stub
+          latlng=""
+          options="[object Object]"
+        >
+          Jakarta
+        </lpopup-stub>
+      </lmarker-stub>
+    </v-marker-cluster-stub>
+  </lmap-stub>
+</no-ssr-stub>
+`;

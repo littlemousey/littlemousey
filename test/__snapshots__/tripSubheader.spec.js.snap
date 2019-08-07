@@ -1,0 +1,20 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Trip subheader renders correctly 1`] = `
+<v-row-stub
+  tag="div"
+>
+  <v-col-stub
+    cols="12"
+    tag="div"
+  >
+    <h3
+      class="display-1 my-4 text-underline"
+    >
+      
+      
+    
+    </h3>
+  </v-col-stub>
+</v-row-stub>
+`;

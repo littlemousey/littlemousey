@@ -1,0 +1,56 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Destination card renders correctly 1`] = `
+<v-col-stub
+  cols="12"
+  md="3"
+  sm="5"
+  tag="div"
+>
+  <v-card-stub
+    hover="true"
+    loaderheight="4"
+    nuxt="true"
+    tag="div"
+    to=""
+  >
+    <v-img-stub
+      position="center center"
+      src="imageUrl"
+      transition="fade-transition"
+    />
+     
+    <v-card-title-stub
+      primary-title=""
+      primarytitle=""
+    >
+      <div>
+        
+        title
+      
+      </div>
+       
+      <div
+        class="grey--text subtitle-1"
+      >
+        text
+      </div>
+    </v-card-title-stub>
+     
+    <v-card-actions-stub>
+      <v-btn-stub
+        activeclass=""
+        color="orange"
+        nuxt="true"
+        small="true"
+        tag="button"
+        text="true"
+        to=""
+        type="button"
+      >
+        
+      </v-btn-stub>
+    </v-card-actions-stub>
+  </v-card-stub>
+</v-col-stub>
+`;

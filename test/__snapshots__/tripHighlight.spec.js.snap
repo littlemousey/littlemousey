@@ -1,0 +1,35 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Trip highlight renders correctly 1`] = `
+<div>
+  <v-row-stub
+    class="my-5"
+    tag="div"
+  >
+    <v-col-stub
+      class="mx-2"
+      cols="12"
+      md="5"
+      tag="div"
+    >
+      <!---->
+    </v-col-stub>
+     
+    <v-col-stub
+      alignself="center"
+      class="mx-2"
+      cols="12"
+      md="5"
+      tag="div"
+    >
+      <div>
+        
+        
+      
+      </div>
+    </v-col-stub>
+  </v-row-stub>
+   
+  <!---->
+</div>
+`;

@@ -2,7 +2,7 @@ import { mount } from '@vue/test-utils'
 import weatherButton from '@/components/weatherButton'
 import mutations from '@/store/weather/mutations.js'
 
-let wrapper, vm
+let wrapper
 const mockFunction = jest.fn().mockImplementation(() => Promise.resolve(true))
 
 beforeEach(() => {
@@ -11,8 +11,6 @@ beforeEach(() => {
       checkWeatherData: mockFunction
     }
   })
-  vm = wrapper.vm
-  vm.checkWeatherData = mockFunction
 })
 
 describe('WeatherButton', () => {

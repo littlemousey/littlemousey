@@ -1,0 +1,64 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Project card renders correctly 1`] = `
+<v-col-stub
+  cols="12"
+  md="4"
+  sm="6"
+  tag="div"
+>
+  <v-card-stub
+    class="mx-2 my-2"
+    hover="true"
+    href="demo link"
+    loaderheight="4"
+    tag="div"
+  >
+    <v-img-stub
+      position="center center"
+      src="image"
+      transition="fade-transition"
+    />
+     
+    <v-card-title-stub
+      class="justify-center"
+    >
+      <div
+        class="title"
+      >
+        
+      </div>
+    </v-card-title-stub>
+     
+    <v-card-actions-stub>
+      <v-row-stub
+        align="center"
+        justify="space-around"
+        tag="div"
+      >
+        <v-btn-stub
+          activeclass=""
+          color="orange"
+          href="demo link"
+          tag="button"
+          text="true"
+          type="button"
+        >
+          Demo
+        </v-btn-stub>
+         
+        <v-btn-stub
+          activeclass=""
+          color="orange"
+          href="repoUrl"
+          tag="button"
+          text="true"
+          type="button"
+        >
+          Code
+        </v-btn-stub>
+      </v-row-stub>
+    </v-card-actions-stub>
+  </v-card-stub>
+</v-col-stub>
+`;
