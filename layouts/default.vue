@@ -28,14 +28,17 @@
       </v-list>
     </v-navigation-drawer>
     <v-app-bar color="blue darken-4" dark fixed app clipped-left>
-      <v-app-bar-nav-icon @click="drawer = !drawer" />
+      <v-app-bar-nav-icon
+        data-testid="drawer-button"
+        @click="drawer = !drawer"
+      />
       <v-toolbar-title
         class="title home-link"
         @click="goToHome()"
         v-text="title"
       />
       <v-spacer />
-      <weather-button data-testid="weather-btn"></weather-button>
+      <weather-button data-testid="weather-button"></weather-button>
     </v-app-bar>
     <v-content>
       <v-container>

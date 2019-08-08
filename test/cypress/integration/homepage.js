@@ -5,14 +5,13 @@ describe('Homepage', () => {
   })
 
   it('There is a travels page', () => {
-    // cy.get('[data-testid="weather-btn"]').click()
+    cy.get('[data-testid="drawer-button"]').click()
     cy.get('[data-testid="Travels"]').click()
     cy.contains('h1', 'This mouse loves traveling and exploring the world')
   })
-})
 
-describe('My First Test', function() {
-  it('Does not do much!', function() {
-    expect(true).to.equal(true)
+  it('Visits weather page', () => {
+    cy.get('[data-testid="weather-button"]').click()
+    cy.contains('h3', 'The weather in the Netherlands today')
   })
 })
