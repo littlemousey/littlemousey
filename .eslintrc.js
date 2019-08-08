@@ -2,7 +2,8 @@ module.exports = {
   root: true,
   env: {
     browser: true,
-    node: true
+    node: true,
+    'cypress/globals': true
   },
   parserOptions: {
     parser: 'babel-eslint'
@@ -12,9 +13,10 @@ module.exports = {
     'plugin:nuxt/recommended',
     'plugin:prettier/recommended',
     'prettier',
-    'prettier/vue'
+    'prettier/vue',
+    'plugin:cypress/recommended'
   ],
-  plugins: ['prettier', 'vuetify'],
+  plugins: ['prettier', 'vuetify', 'cypress'],
   // add your custom rules here
   rules: {
     'vuetify/grid-unknown-attributes': 'error',
