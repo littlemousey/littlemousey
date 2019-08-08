@@ -12,6 +12,7 @@
           v-for="item in items"
           :key="item.title"
           :to="item.to"
+          :data-testid="item.title"
           router
         >
           <v-list-item-icon>
@@ -34,7 +35,7 @@
         v-text="title"
       />
       <v-spacer />
-      <weather-button></weather-button>
+      <weather-button data-testid="weather-btn"></weather-button>
     </v-app-bar>
     <v-content>
       <v-container>
