@@ -5,7 +5,14 @@ import tripSubheader from '@/components/travelJournal/tripSubheader'
 
 Vue.use(Vuetify)
 
-const wrapper = shallowMount(tripSubheader)
+let wrapper
+beforeEach(() => {
+  wrapper = shallowMount(tripSubheader)
+})
+
+afterEach(() => {
+  wrapper.destroy()
+})
 
 describe('Trip subheader', () => {
   it('renders correctly', () => {

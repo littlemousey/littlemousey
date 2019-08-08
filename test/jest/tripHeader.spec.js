@@ -5,12 +5,19 @@ import tripHeader from '@/components/travelJournal/tripHeader'
 
 Vue.use(Vuetify)
 
-const wrapper = shallowMount(tripHeader, {
-  propsData: {
-    imgUrl: 'img.png',
-    title: 'title',
-    text: 'text'
-  }
+let wrapper
+beforeEach(() => {
+  wrapper = shallowMount(tripHeader, {
+    propsData: {
+      imgUrl: 'img.png',
+      title: 'title',
+      text: 'text'
+    }
+  })
+})
+
+afterEach(() => {
+  wrapper.destroy()
 })
 
 describe('Trip header', () => {

@@ -13,6 +13,10 @@ beforeEach(() => {
   })
 })
 
+afterEach(() => {
+  wrapper.destroy()
+})
+
 describe('WeatherButton', () => {
   it('renders correctly', () => {
     expect(wrapper.element).toMatchSnapshot()

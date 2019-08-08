@@ -5,12 +5,20 @@ import destinationCard from '@/components/destinationCard'
 
 Vue.use(Vuetify)
 
-const wrapper = shallowMount(destinationCard, {
-  propsData: {
-    title: 'title',
-    text: 'text',
-    imageUrl: 'imageUrl'
-  }
+let wrapper
+
+beforeEach(() => {
+  wrapper = shallowMount(destinationCard, {
+    propsData: {
+      title: 'title',
+      text: 'text',
+      imageUrl: 'imageUrl'
+    }
+  })
+})
+
+afterEach(() => {
+  wrapper.destroy()
 })
 
 describe('Destination card', () => {

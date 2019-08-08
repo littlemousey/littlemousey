@@ -5,12 +5,20 @@ import projectCard from '@/components/projectCard'
 
 Vue.use(Vuetify)
 
-const wrapper = shallowMount(projectCard, {
-  propsData: {
-    demoLink: 'demo link',
-    image: 'image',
-    repoUrl: 'repoUrl'
-  }
+let wrapper
+
+beforeEach(() => {
+  wrapper = shallowMount(projectCard, {
+    propsData: {
+      demoLink: 'demo link',
+      image: 'image',
+      repoUrl: 'repoUrl'
+    }
+  })
+})
+
+afterEach(() => {
+  wrapper.destroy()
 })
 
 describe('Project card', () => {

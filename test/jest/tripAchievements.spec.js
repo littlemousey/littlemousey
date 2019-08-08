@@ -5,11 +5,19 @@ import tripAchievements from '@/components/travelJournal/tripAchievements'
 
 Vue.use(Vuetify)
 
-const wrapper = shallowMount(tripAchievements, {
-  propsData: {
-    title: 'title',
-    achievements: [{ title: 'title', achieved: true }]
-  }
+let wrapper
+
+beforeEach(() => {
+  wrapper = shallowMount(tripAchievements, {
+    propsData: {
+      title: 'title',
+      achievements: [{ title: 'title', achieved: true }]
+    }
+  })
+})
+
+afterEach(() => {
+  wrapper.destroy()
 })
 
 describe('Achievements', () => {

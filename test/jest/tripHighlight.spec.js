@@ -5,10 +5,17 @@ import tripHighlight from '@/components/travelJournal/tripHighlight'
 
 Vue.use(Vuetify)
 
-const wrapper = shallowMount(tripHighlight, {
-  propsData: {
-    imageLeft: true
-  }
+let wrapper
+beforeEach(() => {
+  wrapper = shallowMount(tripHighlight, {
+    propsData: {
+      imageLeft: true
+    }
+  })
+})
+
+afterEach(() => {
+  wrapper.destroy()
 })
 
 describe('Trip highlight', () => {
