@@ -11,7 +11,12 @@ const locationsUntil2010 = [
   { city: 'Oliva', coordinates: [38.919392, -0.12268] },
   { city: 'Benidorm', coordinates: [38.5369, -0.12912] },
   { city: 'Salou', coordinates: [41.077747, 1.131593] },
-  { city: 'Disneyland Paris', coordinates: [48.8662931, 2.7813203] }
+  { city: 'Disneyland Paris', coordinates: [48.8662931, 2.7813203] },
+  { city: 'Stavelot', coordinates: [50.39418, 5.929] },
+  { city: 'Brugge', coordinates: [51.209347, 3.224699] },
+  { city: 'Zeebrugge', coordinates: [51.3189681, 3.1743746] },
+  { city: 'Walibi Belgium', coordinates: [50.7018637, 4.5918475] },
+  { city: 'Liptovský Mikuláš', coordinates: [49.0881028, 19.5767105] }
 ]
 
 export default locationsUntil2010

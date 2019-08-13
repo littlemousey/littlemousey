@@ -1,7 +1,11 @@
 <template>
   <v-row justify="center">
     <v-col class="mt-2" cols="12">
-      <leafletmap :markers="allMarkersCombined" :big-map="true"></leafletmap>
+      <leafletmap
+        :markers="allMarkersCombined"
+        :big-map="true"
+        :zoom="zoomMap"
+      ></leafletmap>
     </v-col>
   </v-row>
 </template>
@@ -38,7 +42,8 @@ export default {
       markersNL: locationsNL,
       markersAsia: locationsAsia,
       markersOld: locationsOld,
-      destinations: destinations
+      destinations: destinations,
+      zoomMap: 3
     }
   },
   computed: {
