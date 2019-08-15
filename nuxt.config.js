@@ -66,7 +66,7 @@ export default {
   /*
    ** Plugins to load before mounting the App
    */
-  plugins: [{ src: '~/plugins/leaflet.js', ssr: false }],
+  plugins: [],
   /*
    ** Nuxt.js modules
    */
@@ -121,6 +121,7 @@ export default {
       error: colors.deepOrange.accent4,
       success: colors.green.accent3
     },
+    customVariables: ['~/styles/variables.scss'],
     treeShake: true
   },
   /*
@@ -131,7 +132,7 @@ export default {
     extend(config, ctx) {}
   },
   generate: {
-    devtools: true,
+    devtools: false,
     routes: ['/travels/paris', '/travels/schiermonnikoog']
   }
 }
