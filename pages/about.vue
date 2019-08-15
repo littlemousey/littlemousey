@@ -1,5 +1,5 @@
 <template>
-  <v-container>
+  <div>
     <v-row justify="center">
       <img
         src="/img/littlemousey_wave.png"
@@ -8,11 +8,18 @@
       />
     </v-row>
     <v-row justify="center">
-      <p class="text-center">
-        Little mousey 🐭 is a small enthousiastic front-end developer. <br />
-        She lives in the Netherlands 🇳🇱 <br />Little mousey's other hobbies are
-        travelling, drawing, video games, photography and music.
-      </p>
+      <v-col cols="12" md="7">
+        <p class="text-center">
+          This website is made by an enthusiastic Front-end developer from the
+          Netherlands 🇳🇱 <br />
+          I always had a liking for mice (except for that time they chewed on my
+          internet cable in China). The mouse on my website has been my
+          companion for as long I can remember. Ever since primary school I
+          sometimes tend to draw this cute little mousey that makes me smile. It
+          kind of became my spirit animal. <br />My other hobbies are
+          travelling, drawing, video games, photography and music.
+        </p>
+      </v-col>
     </v-row>
     <v-row class="fill-height" justify="space-around">
       <v-col cols="2">
@@ -72,7 +79,7 @@
       :icon-color="iconColor"
       :achievements="technologies"
     ></TripAchievements>
-  </v-container>
+  </div>
 </template>
 
 <script>

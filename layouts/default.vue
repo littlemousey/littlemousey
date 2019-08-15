@@ -1,12 +1,14 @@
 <template>
   <v-app class="app">
-    <v-navigation-drawer v-model="drawer" width="300" fixed app clipped>
+    <v-navigation-drawer v-model="drawer" width="350" app clipped fixed>
       <v-list dense nav class="py-0">
         <v-list-item>
           <v-list-item-avatar size="70">
             <img src="/img/littlemousey_wave.png" />
           </v-list-item-avatar>
         </v-list-item>
+
+        <v-divider></v-divider>
 
         <v-list-item
           v-for="item in items"
@@ -58,7 +60,7 @@ export default {
   components: { weatherButton },
   data() {
     return {
-      drawer: this.checkOnSmallDevice(),
+      drawer: true,
       items: [
         {
           icon: 'public',
@@ -66,14 +68,19 @@ export default {
           to: '/'
         },
         {
-          icon: 'beach_access',
-          title: 'Travels',
-          to: '/travels'
-        },
-        {
           icon: 'toys',
           title: 'Projects',
           to: '/projects'
+        },
+        {
+          icon: 'code',
+          title: 'Front end development',
+          to: '/frontend'
+        },
+        {
+          icon: 'beach_access',
+          title: 'Travels',
+          to: '/travels'
         },
         {
           icon: 'pets',
@@ -85,16 +92,6 @@ export default {
     }
   },
   methods: {
-    checkOnSmallDevice() {
-      if (
-        this.$vuetify.breakpoint.name === 'sm' ||
-        this.$vuetify.breakpoint.name === 'xs'
-      ) {
-        this.drawer = false
-      } else {
-        this.drawer = true
-      }
-    },
     goToHome() {
       this.$router.push({
         path: '/'
