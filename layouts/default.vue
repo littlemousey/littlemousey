@@ -1,10 +1,10 @@
 <template>
   <v-app class="app">
     <v-navigation-drawer v-model="drawer" width="350" app clipped fixed>
-      <v-list dense nav class="py-0">
-        <v-list-item>
+      <v-list nav>
+        <v-list-item class="pt-8">
           <v-list-item-avatar size="70">
-            <img src="/img/littlemousey_wave.png" />
+            <v-img src="/img/littlemousey_wave.png"></v-img>
           </v-list-item-avatar>
         </v-list-item>
 

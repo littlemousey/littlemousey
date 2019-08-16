@@ -1,11 +1,13 @@
 <template>
-  <section>
+  <div>
+    <v-row justify="center">
+      <v-col cols="10" md="auto">
+        <h1>Front end development</h1>
+      </v-col>
+    </v-row>
     <section id="intro">
       <v-row justify="center">
-        <h1>Front end development</h1>
-      </v-row>
-      <v-row justify="center">
-        <v-col cols="8">
+        <v-col cols="10" md="8">
           <p>
             This mouse is passionate about Front-end development and User
             Experience in particular. I mean, why do we build applications? To
@@ -24,27 +26,31 @@
       </v-row>
     </section>
     <section id="tips">
-      <v-row>
-        <v-card class="mx-auto mb-4" tile>
-          <v-toolbar color="pink lighten-1" dark>
-            <v-toolbar-title
-              >Tips in becoming a Front-end developer</v-toolbar-title
-            >
-          </v-toolbar>
-          <v-list :disabled="true" :flat="true">
-            <v-list-item v-for="(item, i) in items" :key="i">
-              <v-list-item-content>
-                <v-list-item-title>{{ item.title }}</v-list-item-title>
-              </v-list-item-content>
-            </v-list-item>
-          </v-list>
-        </v-card>
+      <v-row justify="center">
+        <v-col cols="10" md="auto">
+          <v-card class="mx-auto mb-4" tile>
+            <v-toolbar color="pink lighten-1" dark>
+              <v-toolbar-title
+                >Tips in becoming a Front-end developer</v-toolbar-title
+              >
+            </v-toolbar>
+            <v-list :disabled="true" :flat="true">
+              <v-list-item v-for="(item, i) in items" :key="i">
+                <v-list-item-content>
+                  <v-list-item-title>{{ item.title }}</v-list-item-title>
+                </v-list-item-content>
+              </v-list-item>
+            </v-list>
+          </v-card>
+        </v-col>
       </v-row>
     </section>
     <section id="meetups">
-      <v-row justify="center"><h2>Meetups</h2></v-row>
+      <v-row justify="center"
+        ><v-col cols="10" md="auto"><h2>Meetups</h2></v-col></v-row
+      >
       <v-row justify="center">
-        <v-col cols="8">
+        <v-col cols="10" md="8">
           <p>
             When you don't know where to start it is great to meet other people
             who are already a front-end developer. Find a meetup nearby your
@@ -62,9 +68,11 @@
       </v-row>
     </section>
     <section id="courses">
-      <v-row justify="center"><h2>Online courses</h2></v-row>
+      <v-row justify="center"
+        ><v-col cols="10" md="auto"><h2>Online courses</h2></v-col></v-row
+      >
       <v-row justify="center">
-        <v-col cols="8">
+        <v-col cols="10" md="8">
           <p>
             As a Front end developer, the 3 primary technologies/pillars you
             need to know are:
@@ -79,7 +87,7 @@
         </ol>
       </v-row>
       <v-row justify="center">
-        <v-col cols="8">
+        <v-col cols="10" md="8">
           <p>
             All the frameworks and libraries are secondary. It is recommended to
             first focus on these three technologies before looking into anything
@@ -101,49 +109,55 @@
           </p>
         </v-col>
       </v-row>
-      <v-row>
-        <v-card class="mx-auto mb-4" tile>
-          <v-toolbar color="red lighten-1" dark>
-            <v-toolbar-title
-              >Courses I recommend on FrontendMasters</v-toolbar-title
-            >
-          </v-toolbar>
-          <v-list :disabled="true" :flat="true">
-            <v-list-item v-for="(course, i) in courses" :key="i">
-              <v-list-item-content>
-                <v-list-item-title>{{ course.title }}</v-list-item-title>
-              </v-list-item-content>
-            </v-list-item>
-          </v-list>
-        </v-card></v-row
+      <v-row justify="center">
+        <v-col cols="10" md="auto">
+          <v-card class="mx-auto mb-4" tile>
+            <v-toolbar color="red lighten-1" dark>
+              <v-toolbar-title
+                >Courses I recommend on FrontendMasters</v-toolbar-title
+              >
+            </v-toolbar>
+            <v-list :disabled="true" :flat="true">
+              <v-list-item v-for="(course, i) in courses" :key="i">
+                <v-list-item-content>
+                  <v-list-item-title>{{ course.title }}</v-list-item-title>
+                </v-list-item-content>
+              </v-list-item>
+            </v-list>
+          </v-card>
+        </v-col></v-row
       >
-      <v-row>
-        <v-card class="mx-auto mt-8 mb-4" tile>
-          <v-toolbar color="light-green lighten-1" dark>
-            <v-toolbar-title
-              >Conference talks you can watch on Youtube</v-toolbar-title
-            >
-          </v-toolbar>
-          <v-list :flat="true">
-            <v-list-item v-for="(conference, i) in conferences" :key="i">
-              <v-list-item-content>
-                <v-list-item-title
-                  ><a :href="conference.link">{{
-                    conference.title
-                  }}</a></v-list-item-title
-                >
-              </v-list-item-content>
-            </v-list-item>
-          </v-list>
-        </v-card></v-row
+      <v-row justify="center">
+        <v-col cols="10" md="auto">
+          <v-card class="mx-auto mt-8 mb-4" tile>
+            <v-toolbar color="light-green lighten-1" dark>
+              <v-toolbar-title
+                >Conference talks you can watch on Youtube</v-toolbar-title
+              >
+            </v-toolbar>
+            <v-list :flat="true">
+              <v-list-item v-for="(conference, i) in conferences" :key="i">
+                <v-list-item-content>
+                  <v-list-item-title
+                    ><a :href="conference.link">{{
+                      conference.title
+                    }}</a></v-list-item-title
+                  >
+                </v-list-item-content>
+              </v-list-item>
+            </v-list>
+          </v-card></v-col
+        ></v-row
       >
     </section>
     <section id="platforms">
       <v-row justify="center"
-        ><h2>Practice on online programming platforms</h2></v-row
+        ><v-col cols="10" md="auto"
+          ><h2>Practice on online programming platforms</h2></v-col
+        ></v-row
       >
       <v-row justify="center">
-        <v-col cols="8">
+        <v-col cols="10" md="8">
           <p>
             When you are just starting out,
             <a href="https://www.codecademy.com/">CodeCademy</a> and
@@ -161,9 +175,13 @@
       </v-row>
     </section>
     <section id="projects">
-      <v-row justify="center"><h2>Build your own projects</h2></v-row>
+      <v-row justify="center"
+        ><v-col cols="10" md="auto"
+          ><h2>Build your own projects</h2></v-col
+        ></v-row
+      >
       <v-row justify="center">
-        <v-col cols="8">
+        <v-col cols="10" md="8">
           <p>
             Or you could try to contribute to open source projects! It can be a
             bit intimidating though and not all contributions are received well
@@ -187,27 +205,34 @@
           <li><a href="https://css-tricks.com/">Css-tricks</a></li>
           <li><a href="https://www.w3schools.com/">W3 Schools</a></li>
           <li>
-            <a href="https://stackoverflow.com/"
-              >Stack overflow (when you have a specific problem)</a
-            >
+            <a href="https://stackoverflow.com/">Stack Overflow</a>
           </li>
         </ul>
       </v-row>
       <v-row justify="center">
-        <v-col cols="8">
+        <v-col cols="10" md="8">
           <p>
             The Mozilla Developer Network contains a full documentation on web
             development. Whenever I have to look up things such as methods in
             JavaScript, attributes on HTML elements or CSS shorthand properties,
             I go to MDN.
           </p>
+          <p>
+            For specific questions I Google it and often land on Stack Overflow.
+            If you are stuck with something, most likely someone had the same
+            issue or question and posted it on Stack Overflow
+          </p>
         </v-col>
       </v-row>
     </section>
     <section id="newsletters">
-      <v-row justify="center"><h2>Subscribe to digital newsletters</h2></v-row>
+      <v-row justify="center"
+        ><v-col cols="10" md="auto"
+          ><h2>Subscribe to digital newsletters</h2></v-col
+        ></v-row
+      >
       <v-row justify="center">
-        <v-col cols="8">
+        <v-col cols="10" md="8">
           <p>
             To keep up to date with the latest innovations and updates in the
             world of Front end I would recommend subscribing to the following
@@ -224,10 +249,12 @@
     </section>
     <section id="twitter">
       <v-row justify="center"
-        ><h2>Follow web development news on Twitter</h2></v-row
+        ><v-col cols="10" md="auto"
+          ><h2>Follow web development news on Twitter</h2></v-col
+        ></v-row
       >
       <v-row justify="center">
-        <v-col cols="8">
+        <v-col cols="10" md="8">
           <p>
             Maybe a bit of overkill if you are already subscribed to
             newsletters. I follow all the frameworks I use on Twitter for
@@ -242,7 +269,7 @@
     </section>
     <section id="feedback">
       <v-row justify="center">
-        <v-col cols="8">
+        <v-col cols="10" md="8">
           <p>
             If you have any questions, feedback or additions you can let me know
             on
@@ -251,7 +278,7 @@
         </v-col>
       </v-row>
     </section>
-  </section>
+  </div>
 </template>
 
 <script>
