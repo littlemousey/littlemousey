@@ -52,6 +52,22 @@ const destinations = [
     image: 'https://i.postimg.cc/02w7t2p5/destination-faro.jpg',
     link: '',
     button: 'Will come soon'
+  },
+  {
+    title: 'Finland',
+    text:
+      "Land of Santa Claus, reindeer and of course Moomin! Helsinki as it's capital city, it is still very quiet compared to the central European cities. We travelled from Helsinki to Oulu, and to the Artic circle in Rovaniemi, Lapland.",
+    image: 'https://i.postimg.cc/L5bCvs2w/destination-finland.png',
+    link: '',
+    button: 'Will come soon'
+  },
+  {
+    title: 'Italy',
+    text:
+      "The food is great in Italy, but also offers beautiful nature, architectures, and culture. One thing is for sure, you can't see all of Italy in just one holiday. Every region has its own culture and food specialties. We stayed in Florence in Tuscany and visited surrounding towns and cities. Then, we travelled to Perugia to explore Umbria for a while.",
+    image: 'https://i.postimg.cc/sxd92ZfV/destination-italy.png',
+    link: '',
+    button: 'Will come soon'
   }
 ]
 

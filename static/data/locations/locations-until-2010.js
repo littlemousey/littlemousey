@@ -16,7 +16,11 @@ const locationsUntil2010 = [
   { city: 'Brugge', coordinates: [51.209347, 3.224699] },
   { city: 'Zeebrugge', coordinates: [51.3189681, 3.1743746] },
   { city: 'Walibi Belgium', coordinates: [50.7018637, 4.5918475] },
-  { city: 'Liptovský Mikuláš', coordinates: [49.0881028, 19.5767105] }
+  { city: 'Liptovský Mikuláš', coordinates: [49.0881028, 19.5767105] },
+  { city: 'Saint-Georges-de-Didonne', coordinates: [45.60177, -0.9872] },
+  { city: 'Cognac', coordinates: [45.693459, -0.32502] },
+  { city: "Île d'Oléron", coordinates: [45.9236976, -1.4404732] },
+  { city: 'Futuroscope', coordinates: [46.6698573, 0.3697581] }
 ]
 
 export default locationsUntil2010
