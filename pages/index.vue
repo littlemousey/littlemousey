@@ -1,14 +1,22 @@
 <template>
   <span>
     <v-row justify="center">
-      <h1>{{ greeting }}</h1>
+      <v-col cols="10">
+        <h1 class="text-center">{{ greeting }}</h1>
+      </v-col>
     </v-row>
     <v-row justify="center">
-      <p class="text-center">
-        You can find an overview of Little mousey's personal projects and
-        travels on this website. <br />
-        Enjoy! 🐭
-      </p>
+      <v-col cols="10">
+        <p class="text-center">
+          You found my personal website, congratulations! 🎉 <br />
+          On this website you can find an overview of my programming projects
+          and articles I wrote about Frontend development. <br />
+          I also devoted one section to travels, to share my travel experiences
+          with others. Check it out if you like.
+          <br />
+          Enjoy! 🐭
+        </p>
+      </v-col>
     </v-row>
     <v-row justify="center">
       <img src="/img/haveamiceday.png" alt="Have a mice day" />

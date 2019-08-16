@@ -23,7 +23,7 @@ export default {
       },
       {
         property: 'og:description',
-        content: 'Where little mousey lives'
+        content: 'Home of a little coding mouse'
       },
       {
         property: 'og:image',

@@ -22,7 +22,7 @@
       </v-col>
     </v-row>
     <v-row class="fill-height" justify="space-around">
-      <v-col cols="2">
+      <v-col cols="10" md="3">
         <v-card
           hover
           href="https://github.com/littlemousey"
@@ -35,7 +35,7 @@
           /></v-card-text>
         </v-card>
       </v-col>
-      <v-col cols="2">
+      <v-col cols="10" md="3">
         <v-card
           hover
           href="https://medium.com/@littlemousey"
@@ -47,7 +47,7 @@
           /></v-card-text>
         </v-card>
       </v-col>
-      <v-col cols="2">
+      <v-col cols="10" md="3">
         <v-card
           hover
           href="https://www.linkedin.com/in/ansdenijs/"
@@ -59,7 +59,7 @@
           </v-card-text>
         </v-card>
       </v-col>
-      <v-col cols="2">
+      <v-col cols="10" md="3">
         <v-card
           hover
           href="https://twitter.com/ansdenijs"
