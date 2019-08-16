@@ -7,7 +7,7 @@
         <div>
           {{ title }}
         </div>
-        <div class="grey--text subtitle-1">{{ text }}</div>
+        <div class="black--text subtitle-1">{{ text }}</div>
       </v-card-title>
 
       <v-card-actions>

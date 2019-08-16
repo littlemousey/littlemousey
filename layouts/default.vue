@@ -60,7 +60,7 @@ export default {
   components: { weatherButton },
   data() {
     return {
-      drawer: true,
+      drawer: this.checkOnSmallDevice(),
       items: [
         {
           icon: 'public',
@@ -71,6 +71,11 @@ export default {
           icon: 'toys',
           title: 'Projects',
           to: '/projects'
+        },
+        {
+          icon: 'mdi-book-open-page-variant',
+          title: 'Articles',
+          to: '/articles'
         },
         {
           icon: 'code',
@@ -96,6 +101,16 @@ export default {
       this.$router.push({
         path: '/'
       })
+    },
+    checkOnSmallDevice() {
+      if (
+        this.$vuetify.breakpoint.name === 'sm' ||
+        this.$vuetify.breakpoint.name === 'xs'
+      ) {
+        this.drawer = false
+      } else {
+        this.drawer = true
+      }
     }
   }
 }

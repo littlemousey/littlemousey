@@ -1,11 +1,6 @@
 <template>
   <span>
     <v-row justify="center">
-      <transition appear appear-to-class="fold-out">
-        <p class="display-3 font-weight-medium">Little Mousey</p>
-      </transition>
-    </v-row>
-    <v-row justify="center">
       <h1>{{ greeting }}</h1>
     </v-row>
     <v-row justify="center">

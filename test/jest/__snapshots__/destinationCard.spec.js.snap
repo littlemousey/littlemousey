@@ -31,7 +31,7 @@ exports[`Destination card renders correctly 1`] = `
       </div>
        
       <div
-        class="grey--text subtitle-1"
+        class="black--text subtitle-1"
       >
         text
       </div>
