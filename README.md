@@ -1,6 +1,10 @@
 # littlemousey
 
-> website of little mousey
+Old website of little mousey (built in 2019). Dependencies are outdated (built with Nuxt v2).
+
+![Homepage screenshot](https://github.com/littlemousey/littlemousey/blob/master/static/img/website/homepage.png "Homepage")
+![Projects screenshot](https://github.com/littlemousey/littlemousey/blob/master/static/img/website/projects.png "Projects")
+![Travels screenshot](https://github.com/littlemousey/littlemousey/blob/master/static/img/website/projects.png "Travels")
 
 ## Build Setup
 
